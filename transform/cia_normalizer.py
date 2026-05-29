@@ -1,54 +1,49 @@
 """
-transform/normalize_cia.py
+transform/cia_normalizer.py
 
-Normalizes raw CIA World Leaders data into FtM-compatible Person and Occupancy entities.
+Normalizes raw CIA World Leaders data into FtM-compatible Person
+and Occupancy entities.
 
 INPUT:  ingest/cia_raw.json
 OUTPUT: transform/cia_normalized.json
 
 WHAT CIA DATA GIVES US:
-─────────────────────────────────────────────────────
-Country level (metadata — not person properties):
-    country           → Occupancy.organization + to_iso_country() → Person.nationality
-    country_code      → backup reference, not used directly
-    date_updated      → metadata only, stored at country level
-    time_updated      → metadata only, stored at country level
-    caveat            → country-level note, not a person property
-    diplomatic_exchange → country-level note, not a person property
+    Country level (metadata — not person properties):
+        country           → Occupancy.organization
+        country_code      → used to detect naming convention in split_cia_name()
+        date_updated      → stored in meta only
+        time_updated      → stored in meta only
+        caveat            → country-level note, not a person property
+        diplomatic_exchange → country-level note, not a person property
 
-Per leader:
-    name              → split_cia_name() → Person.firstName + Person.lastName + Person.name
-    title             → expand_abbreviations() → Person.position + Occupancy.role
-    honorific         → Person.title (e.g. "Dr.", "Gen.", "Lt. Gen.", "Sir")
+    Per leader:
+        name      → split_cia_name() → firstName + lastName + suffix + alias
+        title     → expand_abbreviations() → Person.position + Occupancy.role
+        honorific → Person.title (e.g. "Dr.", "Gen.", "Lt. Gen.")
 
-WHAT WE CANNOT GET FROM CIA:
-    birthDate         → not available
-    alias             → not available
-    passportNumber    → not available
-    idNumber          → not available
-    topics            → we tag all CIA persons as "role.pep" (Politically Exposed Person)
-                        because by definition everyone on this list holds public office
+WHAT WE CANNOT GET FROM CIA (left empty):
+        birthDate, alias (from name field only), passportNumber, idNumber
+        nationality — CIA shows where someone WORKS not where they're FROM
+                      Setting nationality from country would be inaccurate
 
-FtM ENTITY STRUCTURE:
-─────────────────────────────────────────────────────
-One CIA country record produces:
-    - One Person entity per unique leader name
-      (same person holding multiple positions = one Person, multiple Occupancies)
-    - One Occupancy entity per position held
+FtM TOPICS TAG:
+        All CIA persons tagged "role.pep" — Politically Exposed Person.
+        Everyone on the CIA world leaders list holds public office by definition.
 
 CUSTOM METADATA (outside FtM properties):
-    sources           → ["cia_world_leaders"] — used in dedup step to track origin
-    country           → country name string — used in dedup step for matching
-    country_code      → ISO alpha-2 — used in dedup step for matching
-    date_updated      → when CIA last updated this country page
+        sources      → ["cia_world_leaders"]
+        country      → country name string for dedup matching
+        country_code → ISO alpha-2 for dedup matching
+        date_updated → when CIA last updated this page
 
 SKIPPED RECORDS:
-    - VACANT positions (31 found in profiler) — no person to record
-    - Empty names (30 found in profiler) — data quality issue
+        VACANT positions — no person to record (31 found in profiler)
+        Empty names — data quality issue (30 found in profiler)
 """
 
 import json
 import time
+from datetime import date
 from helpers import (
     make_id,
     to_iso_country,
@@ -62,6 +57,9 @@ CIA_INPUT_PATH  = "ingest/cia_raw.json"
 CIA_OUTPUT_PATH = "transform/cia_normalized.json"
 CIA_BASE_URL    = "https://www.cia.gov/resources/world-leaders/foreign-governments"
 
+# Today's date for retrievedAt — set once per pipeline run
+RETRIEVED_AT = date.today().isoformat()  # e.g. "2026-05-29"
+
 
 # ─── Entity Builders ──────────────────────────────────────────────────────────
 
@@ -69,54 +67,83 @@ def build_person(leader, country, country_code, slug):
     """
     Builds a FtM Person entity from one CIA leader record.
 
-    FtM properties used:
-        name        (inherited from Thing)   → full display name
-        firstName   (Person)                 → from split_cia_name()
-        lastName    (Person)                 → from split_cia_name()
-        title       (Person)                 → honorific e.g. "Dr.", "Gen."
-        position    (Person)                 → expanded job title
-        nationality (Person)                 → ISO alpha-2 from country name
-        topics      (Person)                 → "role.pep" — politically exposed person
-        sourceUrl   (inherited from Entity)  → CIA country page URL
+    NAME SPLITTING:
+        split_cia_name() now receives country_code so it can apply
+        the correct naming strategy (East Asian, Romance, Arabic, etc.)
+        Returns a dict with first_name, last_name, suffix, alias,
+        embedded_honorific.
 
-    Custom metadata (outside FtM properties):
-        sources      → ["cia_world_leaders"]
-        country      → raw country name string
-        country_code → ISO alpha-2 code
+    HONORIFIC MERGING:
+        CIA has two sources of honorifics:
+        1. leader["honorific"] field e.g. "Dr.", "Gen."
+        2. embedded in name string e.g. "Dr. Shaya al-Zindani"
+        We merge both into Person.title so neither is lost.
+
+    FtM PROPERTIES USED:
+        name        (Thing)    → full display name
+        firstName   (Person)   → given name(s) + middle
+        lastName    (Person)   → family name only, no suffix
+        nameSuffix  (Person)   → "Jr.", "Sr.", "III"
+        title       (Person)   → honorific e.g. "Dr.", "Gen."
+        position    (Person)   → expanded job title
+        topics      (Person)   → ["role.pep"]
+        sourceUrl   (Entity)   → CIA country page URL
+        alias       (Person)   → from inline a.k.a. in name field
+        retrievedAt (Thing)    → date this pipeline run fetched the data
+
+    NOT SET (and why):
+        nationality → we know where they work, not where they're from
+        birthDate   → not in CIA data
+        notes       → nothing meaningful to add for CIA
 
     Args:
-        leader:       dict with name, title, honorific from CIA raw data
+        leader:       dict with name, title, honorific
         country:      country name string e.g. "Philippines"
         country_code: ISO alpha-2 e.g. "ph"
         slug:         URL slug e.g. "philippines"
 
     Returns:
-        tuple (person_id, person_dict) or (None, None) if record should be skipped
+        tuple (person_id, person_dict) or (None, None) if should skip
     """
     raw_name  = leader.get("name", "").strip()
     raw_title = leader.get("title", "").strip()
     honorific = leader.get("honorific", "").strip()
 
-    # Skip VACANT and empty names — 31 and 30 found in profiler respectively
+    # Skip VACANT and empty — 31 and 30 found in profiler
     if not raw_name or "VACANT" in raw_name.upper():
-        print(f"  [SKIP] VACANT or empty name — title: '{raw_title}' in {country}")
+        print(f"  [SKIP] VACANT/empty — title: '{raw_title}' in {country}")
         return None, None
 
-    first, last = split_cia_name(raw_name)
+    # Split name using country-aware strategy
+    name_parts = split_cia_name(raw_name, country_code)
 
-    # Build display name from split components
-    if first and last:
-        full_name = f"{first} {last}"
-    elif last:
-        full_name = last
-    else:
-        full_name = raw_name  # fallback — use raw if split failed
+    first  = name_parts["first_name"]
+    last   = name_parts["last_name"]
+    suffix = name_parts["suffix"]
+    alias  = name_parts["alias"]
+    emb_honorific = name_parts["embedded_honorific"]
+
+    # Build display name from components
+    parts = []
+    if first:
+        parts.append(first)
+    if last:
+        parts.append(last)
+    if suffix:
+        parts.append(suffix)
+    full_name = " ".join(parts) if parts else raw_name
+
+    # Merge both sources of honorifics
+    all_honorifics = []
+    if honorific:
+        all_honorifics.append(honorific)
+    if emb_honorific and emb_honorific != honorific:
+        all_honorifics.append(emb_honorific)
 
     expanded_title = expand_abbreviations(raw_title)
-    iso_country    = to_iso_country(country)
 
     # Deterministic ID — based on source + country + raw name
-    # Using raw_name (not cleaned) ensures the ID is stable across runs
+    # Using raw_name (not cleaned) keeps ID stable across pipeline runs
     person_id = make_id("cia", country, raw_name)
 
     person = {
@@ -125,26 +152,30 @@ def build_person(leader, country, country_code, slug):
         "id": person_id,
         "properties": {
             # Thing (inherited)
-            "name":      [full_name],
-            "notes":     [],          # nothing to add for CIA persons
+            "name":        [full_name],
+            "notes":       [],
+            "retrievedAt": [RETRIEVED_AT],
 
             # Entity (inherited)
             "sourceUrl": [f"{CIA_BASE_URL}/{slug}/"],
 
             # Person
-            "firstName":   [first]          if first     else [],
-            "lastName":    [last]           if last      else [],
-            "title":       [honorific]      if honorific else [],  # e.g. "Dr.", "Gen."
-            "position":    [expanded_title] if expanded_title else [],
-            "nationality": [iso_country]    if iso_country else [],
-            "topics":      ["role.pep"],    # everyone on CIA list is a PEP by definition
+            "firstName":   [first]           if first           else [],
+            "lastName":    [last]            if last            else [],
+            "nameSuffix":  [suffix]          if suffix          else [],
+            "alias":       [alias]           if alias           else [],
+            "title":       all_honorifics,
+            "position":    [expanded_title]  if expanded_title  else [],
+            "topics":      ["role.pep"],
+            # nationality intentionally omitted — see module docstring
         },
 
-        # ── Custom metadata (outside FtM) ─────────────────────────────────────
+        # ── Custom metadata (outside FtM properties) ──────────────────────────
         # Used in dedup step to match persons across sources
         "sources":      ["cia_world_leaders"],
         "country":      country,
-        "country_code": iso_country,
+        "country_code": country_code,
+        "date_updated": leader.get("date_updated", ""),
     }
 
     return person_id, person
@@ -154,25 +185,22 @@ def build_occupancy(leader, person_id, country):
     """
     Builds a FtM Occupancy entity linking a Person to their role.
 
-    One Occupancy per position held. Same person holding two positions
+    One Occupancy per position held. Same person with two positions
     gets two Occupancy entities both pointing to the same Person ID.
+    This is how the 476 duplicate names from profiler are handled.
 
-    FtM properties used:
+    FtM PROPERTIES USED:
         holder       (Occupancy) → Person entity ID
         role         (Occupancy) → expanded job title
         organization (Occupancy) → country name
+        retrievedAt  (Thing)     → pipeline run date
 
-    Not available from CIA data (left empty):
-        startDate    (Occupancy) → not in CIA data
-        endDate      (Occupancy) → not in CIA data
-        status       (Occupancy) → not in CIA data
-
-    Custom metadata (outside FtM):
-        sources → ["cia_world_leaders"]
+    NOT SET (not in CIA data):
+        startDate, endDate, status
 
     Args:
-        leader:    dict with title from CIA raw data
-        person_id: ID of the Person entity this Occupancy belongs to
+        leader:    dict with name and title
+        person_id: ID of the Person this Occupancy belongs to
         country:   country name string
 
     Returns:
@@ -181,7 +209,7 @@ def build_occupancy(leader, person_id, country):
     raw_title      = leader.get("title", "").strip()
     expanded_title = expand_abbreviations(raw_title)
 
-    # Occupancy ID includes title so same person with two roles gets two IDs
+    # Occupancy ID includes title so same person with two roles = two IDs
     occ_id = make_id("cia", country, leader.get("name", ""), raw_title)
 
     return {
@@ -190,32 +218,35 @@ def build_occupancy(leader, person_id, country):
         "id": occ_id,
         "properties": {
             # Thing (inherited)
-            "name":  [],   # not needed — role + organization already describe it
-            "notes": [],
+            "name":        [],
+            "notes":       [],
+            "retrievedAt": [RETRIEVED_AT],
 
             # Occupancy
             "holder":       [person_id],
             "role":         [expanded_title] if expanded_title else [],
             "organization": [country],
-            "startDate":    [],   # not available in CIA data
-            "endDate":      [],   # not available in CIA data
-            "status":       [],   # not available in CIA data
+            "startDate":    [],
+            "endDate":      [],
+            "status":       [],
         },
 
-        # ── Custom metadata (outside FtM) ─────────────────────────────────────
+        # ── Custom metadata ───────────────────────────────────────────────────
         "sources": ["cia_world_leaders"],
     }
 
 
-# ─── Main Normalizer ──────────────────────────────────────────────────────────
+# ─── Country Normalizer ───────────────────────────────────────────────────────
 
 def normalize_country(country_data):
     """
     Normalizes one CIA country record into Person and Occupancy entities.
 
-    Handles the 476 duplicate names found in profiler:
-    Same person holding multiple positions → one Person, multiple Occupancies.
-    We track seen person IDs per country to avoid duplicate Person entities.
+    DUPLICATE NAME HANDLING:
+        Profiler found 476 cases where same name appears multiple times
+        in one country — same person holds multiple positions.
+        We track person_id per country. If already seen → add Occupancy only.
+        Result: one Person entity, multiple Occupancy entities per position.
 
     Args:
         country_data: one country dict from cia_raw.json
@@ -224,28 +255,39 @@ def normalize_country(country_data):
         tuple (persons list, occupancies list)
     """
     country      = country_data["country"]
-    country_code = country_data.get("country_code", "").lower()
+    raw_code     = country_data.get("country_code", "")
     leaders      = country_data.get("leaders", [])
 
-    # Derive slug from country_code for sourceUrl
-    # e.g. country_code "RP" → we use the country name lowercased as slug
-    slug = country.lower().replace(" ", "-").replace(",", "").replace(".", "")
+    # Convert CIA's own country code to ISO for naming strategy detection
+    # CIA uses non-standard codes like "RP" for Philippines
+    # We need ISO alpha-2 like "ph" for ROMANCE_COUNTRIES / EAST_ASIAN_COUNTRIES
+    country_code = to_iso_country(country)
 
-    persons      = {}   # person_id → person dict (deduplicated by ID)
-    occupancies  = []
+    # Build URL slug from country name
+    # e.g. "Philippines" → "philippines"
+    # e.g. "Korea, North" → "korea-north"
+    slug = (
+        country.lower()
+        .replace(", ", "-")
+        .replace(" ", "-")
+        .replace(".", "")
+        .replace("'", "")
+    )
+
+    persons     = {}   # person_id → person dict (deduped by ID)
+    occupancies = []
 
     for leader in leaders:
         person_id, person = build_person(leader, country, country_code, slug)
 
         if person_id is None:
-            continue  # VACANT or empty name — already logged in build_person
+            continue  # VACANT or empty — already logged
 
-        # Only add Person if not seen yet for this country
-        # This handles the 476 duplicate names from profiler
+        # Add Person only once even if they hold multiple positions
         if person_id not in persons:
             persons[person_id] = person
-        
-        # Always add Occupancy — same person can hold multiple roles
+
+        # Always add Occupancy — multiple roles = multiple occupancies
         occ = build_occupancy(leader, person_id, country)
         occupancies.append(occ)
 
@@ -256,25 +298,26 @@ def normalize_country(country_data):
 
 def run():
     """
-    Loads cia_raw.json, normalizes all records, saves to cia_normalized.json.
+    Loads cia_raw.json, normalizes all records, saves cia_normalized.json.
 
-    Output structure:
+    OUTPUT STRUCTURE:
     {
         "meta": {
             "total_countries": 199,
             "total_persons": ...,
             "total_occupancies": ...,
             "skipped": ...,
+            "failed_countries": [],
+            "retrieved_at": "2026-05-29"
         },
         "persons": [...],
         "occupancies": [...]
     }
 
-    Returns:
-        dict with persons and occupancies lists so FastAPI can use directly
-        without reading from disk.
+    Returns dict so FastAPI pipeline can use data without reading from disk.
     """
     start = time.time()
+    elapsed = time.time() - start
 
     print(f"Loading {CIA_INPUT_PATH}...")
     with open(CIA_INPUT_PATH) as f:
@@ -283,7 +326,7 @@ def run():
 
     all_persons     = []
     all_occupancies = []
-    skipped         = 0
+    total_skipped   = 0
     failed          = []
 
     for i, country_data in enumerate(cia_data, start=1):
@@ -295,24 +338,25 @@ def run():
             all_persons.extend(persons)
             all_occupancies.extend(occupancies)
 
-            # Count skipped = leaders - (persons + occupancies mismatch)
             total_leaders = len(country_data.get("leaders", []))
-            skipped += total_leaders - len(occupancies)
+            skipped = total_leaders - len(occupancies)
+            total_skipped += skipped
 
-            print(f"    {len(persons)} persons, {len(occupancies)} occupancies")
+            print(f"    {len(persons)} persons, {len(occupancies)} occupancies"
+                  + (f", {skipped} skipped" if skipped else ""))
 
         except Exception as e:
             failed.append(country)
             print(f"  [FAIL] {country}: {e}")
 
-    # ── Build output ──────────────────────────────────────────────────────────
     output = {
         "meta": {
             "total_countries":   len(cia_data),
             "total_persons":     len(all_persons),
             "total_occupancies": len(all_occupancies),
-            "skipped":           skipped,
+            "skipped":           total_skipped,
             "failed_countries":  failed,
+            "retrieved_at":      RETRIEVED_AT,
         },
         "persons":     all_persons,
         "occupancies": all_occupancies,
@@ -321,23 +365,61 @@ def run():
     with open(CIA_OUTPUT_PATH, "w") as f:
         json.dump(output, f, indent=2)
 
-    elapsed = time.time() - start
-    print(f"\n{'─' * 55}")
+    # ── Detailed summary report ───────────────────────────────────────────────
+    print(f"\n{'═' * 55}")
+    print(f"  CIA NORMALIZATION REPORT")
+    print(f"{'═' * 55}")
     print(f"  Countries processed : {len(cia_data)}")
+    print(f"  Countries failed    : {len(failed)}")
     print(f"  Persons created     : {len(all_persons)}")
     print(f"  Occupancies created : {len(all_occupancies)}")
-    print(f"  Records skipped     : {skipped}")
-    if failed:
-        print(f"  Countries failed    : {failed}")
-    print(f"  Saved to            : {CIA_OUTPUT_PATH}")
+    print(f"  Records skipped     : {total_skipped}")
+    print(f"  Retrieved at        : {RETRIEVED_AT}")
     print(f"  Completed in        : {int(elapsed//60)}m {int(elapsed%60)}s")
+
+    # ── Warning summary ───────────────────────────────────────────────────────
+    # Count warnings from output for quick review
+    persons_no_first   = sum(1 for p in all_persons if not p["properties"]["firstName"])
+    persons_no_last    = sum(1 for p in all_persons if not p["properties"]["lastName"])
+    persons_no_title   = sum(1 for p in all_persons if not p["properties"]["title"])
+    persons_with_alias = sum(1 for p in all_persons if p["properties"]["alias"])
+    persons_with_suffix = sum(1 for p in all_persons if p["properties"]["nameSuffix"])
+    multi_occ_persons  = sum(
+        1 for pid in set(
+            occ["properties"]["holder"][0]
+            for occ in all_occupancies
+            if occ["properties"]["holder"]
+        )
+        if sum(
+            1 for occ in all_occupancies
+            if occ["properties"]["holder"]
+            and occ["properties"]["holder"][0] == pid
+        ) > 1
+    )
+
+    print(f"\n{'─' * 55}")
+    print(f"  QUALITY CHECKS")
+    print(f"{'─' * 55}")
+    print(f"  Persons with no firstName    : {persons_no_first}")
+    print(f"  Persons with no lastName     : {persons_no_last}")
+    print(f"  Persons with no title/honor  : {persons_no_title}")
+    print(f"  Persons with alias extracted : {persons_with_alias}")
+    print(f"  Persons with suffix (Jr etc) : {persons_with_suffix}")
+    print(f"  Persons with multiple roles  : {multi_occ_persons}")
+
+    if failed:
+        print(f"\n{'─' * 55}")
+        print(f"  FAILED COUNTRIES")
+        print(f"{'─' * 55}")
+        for c in failed:
+            print(f"    {c}")
+
+    print(f"{'═' * 55}\n")
 
     return output
 
 
 # ─── Entry Point ──────────────────────────────────────────────────────────────
-# Only runs when executed directly: python transform/normalize_cia.py
-# Does NOT run when imported by the FastAPI pipeline
 
 if __name__ == "__main__":
     run()
