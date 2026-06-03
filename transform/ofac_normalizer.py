@@ -1,6 +1,6 @@
 """
-normalize_ofac.py
-=================
+transform/normalize_ofac.py
+============================
 Transforms ingest/ofac_raw.json into FtM-shaped Person entities and writes
 them to transform/ofac_normalized.json.
 
@@ -12,9 +12,44 @@ Run:
     python transform/normalize_ofac.py
 
 Output:
-    transform/ofac_normalized.json   — list of FtM Person dicts
+    transform/ofac_normalized.json
 
-Five verification checks are printed at the end of every run:
+OUTPUT STRUCTURE:
+    {
+        "meta": {
+            "total_persons": 7506,
+            "retrieved_at":  "2026-06-03"
+        },
+        "persons": [...]
+    }
+
+WHAT OFAC DATA GIVES US:
+    Per person:
+        first_name       → Person.firstName (honorific stripped if present)
+        last_name        → Person.lastName  (title-cased from ALL CAPS)
+        title            → Person.position  (role description, not honorific)
+        aliases          → Person.alias     (all a.k.a. entries)
+        dates_of_birth   → Person.birthDate (multiple = OFAC uncertainty)
+        nationalities    → Person.nationality (ISO alpha-2)
+        citizenships     → Person.nationality (merged with nationalities)
+        ids              → passportNumber / idNumber / cryptoWalletAddress
+        programs         → Person.notes    ("Programs: SDGT, ...")
+        remarks          → Person.notes    (appended after programs)
+
+WHAT WE CANNOT GET FROM OFAC (left empty):
+        position is loose role description, not a verified government title
+        No country_code — nationality is used instead for dedup matching
+        No sourceUrl    — OFAC does not publish per-person URLs
+
+FtM TOPICS TAG:
+    All OFAC persons tagged "sanction".
+    Everyone on the SDN list is a sanctioned individual by definition.
+
+CUSTOM METADATA (outside FtM properties, matches CIA normalizer pattern):
+    sources   → ["ofac_sdn"]
+    ofac_uid  → original OFAC uid for cross-referencing raw file
+
+Five verification checks printed at end of every run:
     1. Count sanity          — persons == unique UIDs
     2. Al-Zawahiri           — name title-cased, alias present, birth date present
     3. Multi-date person     — person with >1 birth date has all dates
@@ -24,133 +59,129 @@ Five verification checks are printed at the end of every run:
 
 import json
 import os
+import time
 from datetime import date
 
-# ---------------------------------------------------------------------------
-# helpers.py lives in the same transform/ directory.  We import the three
-# functions we need:
+# ─── Imports ──────────────────────────────────────────────────────────────────
+# helpers.py lives in the same transform/ directory.
 #   make_id(source, *parts)  — UUID5 deterministic ID
 #   normalize_date(raw)      — handles all OFAC date formats → ISO or None
 #   to_iso_country(name)     — country name → ISO alpha-2 code (e.g. "eg")
-# ---------------------------------------------------------------------------
-from helpers import make_id, normalize_date, to_iso_country
+#   title_case_name(raw)     — title-case a name while preserving known particles
+from helpers import make_id, normalize_date, to_iso_country, title_case_name
 
-# ---------------------------------------------------------------------------
-# Paths 
-# ---------------------------------------------------------------------------
+# ─── Constants ────────────────────────────────────────────────────────────────
+
 OFAC_INPUT_PATH  = "ingest/ofac_raw.json"
 OFAC_OUTPUT_PATH = "transform/ofac_normalized.json"
+OFAC_SOURCE_URL = "https://www.treasury.gov/ofac/downloads/sdn.xml"
 
+# Set once per pipeline run — every entity gets the same retrievedAt value
+RETRIEVED_AT = date.today().isoformat()   # e.g. "2026-06-03"
 
-# Today's date, recorded once per pipeline run so every entity gets the same
-# retrievedAt value.
-TODAY = date.today().isoformat()   # e.g. "2026-05-29"
-
-# ---------------------------------------------------------------------------
-# ID type → FtM property name mapping
+# ─── ID Type Mapping ──────────────────────────────────────────────────────────
+# Maps OFAC free-text ID labels to FtM property names.
+# Built from actual ID type strings found in ofac_raw.json.
 #
-# Built from the actual ID type strings present in ofac_raw.json.
-# Two FtM properties are used:
-#   passportNumber — travel documents (passports, diplomatic passports)
-#   idNumber       — everything else: national IDs, tax IDs, licences, etc.
-#
-# Crypto wallet addresses get their own "cryptoWalletAddress" property so
-# they're searchable separately from document numbers.
-# ---------------------------------------------------------------------------
+# Three FtM properties used:
+#   passportNumber     — travel documents
+#   idNumber           — national IDs, tax IDs, licences, registrations
+#   cryptoWalletAddress — crypto addresses (separate for searchability)
+
 ID_TYPE_MAP = {
     # --- Passports ---
-    "Passport":                     "passportNumber",
-    "Diplomatic Passport":          "passportNumber",
-    "Stateless Person Passport":    "passportNumber",
-    "British National Overseas Passport": "passportNumber",
+    "Passport":                          "passportNumber",
+    "Diplomatic Passport":               "passportNumber",
+    "Stateless Person Passport":         "passportNumber",
+    "British National Overseas Passport":"passportNumber",
 
     # --- National / civil identity documents ---
-    "National ID No.":              "idNumber",
-    "National Foreign ID Number":   "idNumber",
-    "Identification Number":        "idNumber",
-    "Personal ID Card":             "idNumber",
-    "Tazkira National ID Card":     "idNumber",
-    "Refugee ID Card":              "idNumber",
-    "Stateless Person ID Card":     "idNumber",
-    "Federal ID Card":              "idNumber",
-    "UAE Identification":           "idNumber",
-    "Tarjeta de Identidad":         "idNumber",   # Colombian ID card
-    "D.N.I.":                       "idNumber",   # Documento Nacional de Identidad (Spain/Argentina)
-    "N.I.E.":                       "idNumber",   # Número de Identidad de Extranjero (Spain)
-    "Numero de Identidad":          "idNumber",   # Honduras
-    "Kenyan ID No.":                "idNumber",
-    "Moroccan Personal ID No.":     "idNumber",
-    "Bosnian Personal ID No.":      "idNumber",
-    "CNP (Personal Numerical Code)":"idNumber",   # Romania
-    "Romanian Permanent Resident":  "idNumber",
-    "Turkish Identification Number":"idNumber",
-    "C.U.I.":                       "idNumber",   # Guatemalan ID
-    "C.U.I.P.":                     "idNumber",   # Guatemalan passport ID
-    "Citizen's Card Number":        "idNumber",   # China
-    "Chinese Commercial Code":      "idNumber",
-    "Italian Fiscal Code":          "idNumber",
+    "National ID No.":                   "idNumber",
+    "National Foreign ID Number":        "idNumber",
+    "Identification Number":             "idNumber",
+    "Personal ID Card":                  "idNumber",
+    "Tazkira National ID Card":          "idNumber",
+    "Refugee ID Card":                   "idNumber",
+    "Stateless Person ID Card":          "idNumber",
+    "Federal ID Card":                   "idNumber",
+    "UAE Identification":                "idNumber",
+    "Tarjeta de Identidad":              "idNumber",   # Colombian ID card
+    "D.N.I.":                            "idNumber",   # Spain / Argentina
+    "N.I.E.":                            "idNumber",   # Spain foreigner ID
+    "Numero de Identidad":               "idNumber",   # Honduras
+    "Kenyan ID No.":                     "idNumber",
+    "Moroccan Personal ID No.":          "idNumber",
+    "Bosnian Personal ID No.":           "idNumber",
+    "CNP (Personal Numerical Code)":     "idNumber",   # Romania
+    "Romanian Permanent Resident":       "idNumber",
+    "Turkish Identification Number":     "idNumber",
+    "C.U.I.":                            "idNumber",   # Guatemala
+    "C.U.I.P.":                          "idNumber",   # Guatemala passport ID
+    "Citizen's Card Number":             "idNumber",   # China
+    "Chinese Commercial Code":           "idNumber",
+    "Italian Fiscal Code":               "idNumber",
 
     # --- Tax / fiscal IDs ---
-    "Tax ID No.":                   "idNumber",
-    "C.U.R.P.":                     "idNumber",   # Mexico — Clave Única de Registro de Población
-    "R.F.C.":                       "idNumber",   # Mexico — Registro Federal de Contribuyentes
-    "RFC":                          "idNumber",   # alternate label for the same thing
-    "C.U.I.T.":                     "idNumber",   # Argentina — tax ID
-    "NIT #":                        "idNumber",   # Colombia — Número de Identificación Tributaria
-    "RUC #":                        "idNumber",   # Peru/Ecuador — tax ID
-    "SSN":                          "idNumber",   # US Social Security Number
+    "Tax ID No.":                        "idNumber",
+    "C.U.R.P.":                          "idNumber",   # Mexico civil registry
+    "R.F.C.":                            "idNumber",   # Mexico tax ID
+    "RFC":                               "idNumber",   # alternate spelling
+    "C.U.I.T.":                          "idNumber",   # Argentina tax ID
+    "NIT #":                             "idNumber",   # Colombia tax ID
+    "RUC #":                             "idNumber",   # Peru / Ecuador tax ID
+    "SSN":                               "idNumber",   # US Social Security
     "Russian State Individual Business Registration Number Pattern (OGRNIP)": "idNumber",
 
     # --- Electoral / civil registry ---
-    "Electoral Registry No.":       "idNumber",
-    "Credencial electoral":         "idNumber",   # Mexico
-    "I.F.E.":                       "idNumber",   # Mexico — Instituto Federal Electoral
-    "Cedula No.":                   "idNumber",   # Colombia
+    "Electoral Registry No.":            "idNumber",
+    "Credencial electoral":              "idNumber",   # Mexico
+    "I.F.E.":                            "idNumber",   # Mexico electoral ID
+    "Cedula No.":                        "idNumber",   # Colombia
 
     # --- Travel / residency documents ---
-    "Travel Document Number":       "idNumber",
-    "Residency Number":             "idNumber",
-    "Immigration No.":              "idNumber",
-    "VisaNumberID":                 "idNumber",
-    "LE Number":                    "idNumber",   # Law Enforcement credential
+    "Travel Document Number":            "idNumber",
+    "Residency Number":                  "idNumber",
+    "Immigration No.":                   "idNumber",
+    "VisaNumberID":                      "idNumber",
+    "LE Number":                         "idNumber",   # Law Enforcement
 
     # --- Professional / institutional ---
-    "Driver's License No.":         "idNumber",
-    "Pilot License Number":         "idNumber",
-    "Birth Certificate Number":     "idNumber",
-    "Military Registration Number": "idNumber",
-    "Cartilla de Servicio Militar Nacional": "idNumber",   # Mexico military booklet
-    "Matricula Mercantil No":       "idNumber",   # Colombia business registry
-    "Registration ID":              "idNumber",
-    "Registration Number":          "idNumber",
-    "Government Gazette Number":    "idNumber",
-    "Serial No.":                   "idNumber",
-    "License":                      "idNumber",
+    "Driver's License No.":              "idNumber",
+    "Pilot License Number":              "idNumber",
+    "Birth Certificate Number":          "idNumber",
+    "Military Registration Number":      "idNumber",
+    "Cartilla de Servicio Militar Nacional": "idNumber",   # Mexico military
+    "Matricula Mercantil No":            "idNumber",   # Colombia business registry
+    "Registration ID":                   "idNumber",
+    "Registration Number":               "idNumber",
+    "Government Gazette Number":         "idNumber",
+    "Serial No.":                        "idNumber",
+    "License":                           "idNumber",
     "Public Security and Immigration No.": "idNumber",
     "Seafarer's Identification Document":  "idNumber",
 
-    # --- Crypto wallet addresses — separate property for searchability ---
-    "Digital Currency Address - XBT":  "cryptoWalletAddress",   # Bitcoin
-    "Digital Currency Address - ETH":  "cryptoWalletAddress",   # Ethereum
-    "Digital Currency Address - TRX":  "cryptoWalletAddress",   # Tron
-    "Digital Currency Address - USDT": "cryptoWalletAddress",   # Tether
-    "Digital Currency Address - LTC":  "cryptoWalletAddress",   # Litecoin
-    "Digital Currency Address - XMR":  "cryptoWalletAddress",   # Monero
-    "Digital Currency Address - BCH":  "cryptoWalletAddress",   # Bitcoin Cash
-    "Digital Currency Address - ZEC":  "cryptoWalletAddress",   # Zcash
-    "Digital Currency Address - DASH": "cryptoWalletAddress",   # Dash
-    "Digital Currency Address - BTG":  "cryptoWalletAddress",   # Bitcoin Gold
-    "Digital Currency Address - ETC":  "cryptoWalletAddress",   # Ethereum Classic
-    "Digital Currency Address - BSV":  "cryptoWalletAddress",   # Bitcoin SV
-    "Digital Currency Address - XVG":  "cryptoWalletAddress",   # Verge
-    "Digital Currency Address - ARB":  "cryptoWalletAddress",   # Arbitrum
-    "Digital Currency Address - BSC":  "cryptoWalletAddress",   # Binance Smart Chain
-    "Digital Currency Address - USDC": "cryptoWalletAddress",   # USD Coin
-    "Digital Currency Address - SOL":  "cryptoWalletAddress",   # Solana
+    # --- Crypto wallet addresses ---
+    "Digital Currency Address - XBT":    "cryptoWalletAddress",   # Bitcoin
+    "Digital Currency Address - ETH":    "cryptoWalletAddress",   # Ethereum
+    "Digital Currency Address - TRX":    "cryptoWalletAddress",   # Tron
+    "Digital Currency Address - USDT":   "cryptoWalletAddress",   # Tether
+    "Digital Currency Address - LTC":    "cryptoWalletAddress",   # Litecoin
+    "Digital Currency Address - XMR":    "cryptoWalletAddress",   # Monero
+    "Digital Currency Address - BCH":    "cryptoWalletAddress",   # Bitcoin Cash
+    "Digital Currency Address - ZEC":    "cryptoWalletAddress",   # Zcash
+    "Digital Currency Address - DASH":   "cryptoWalletAddress",   # Dash
+    "Digital Currency Address - BTG":    "cryptoWalletAddress",   # Bitcoin Gold
+    "Digital Currency Address - ETC":    "cryptoWalletAddress",   # Ethereum Classic
+    "Digital Currency Address - BSV":    "cryptoWalletAddress",   # Bitcoin SV
+    "Digital Currency Address - XVG":    "cryptoWalletAddress",   # Verge
+    "Digital Currency Address - ARB":    "cryptoWalletAddress",   # Arbitrum
+    "Digital Currency Address - BSC":    "cryptoWalletAddress",   # Binance Smart Chain
+    "Digital Currency Address - USDC":   "cryptoWalletAddress",   # USD Coin
+    "Digital Currency Address - SOL":    "cryptoWalletAddress",   # Solana
 }
 
-# Labels whose values we silently discard — they are attributes or legal
-# boilerplate stored as "id" entries in the OFAC XML, not document numbers.
+# Labels silently discarded — legal boilerplate stored as "id" entries in the
+# OFAC XML, not actual document numbers.
 ID_SKIP_LABELS = {
     "Gender",
     "Secondary sanctions risk:",
@@ -165,38 +196,8 @@ ID_SKIP_LABELS = {
     "Website",
 }
 
-
-# ===========================================================================
-# Name helpers
-# ===========================================================================
-
-def titlecase_name(raw: str) -> str:
-    """
-    Convert an ALL-CAPS OFAC name to title case.
-
-    OFAC stores last names in ALL CAPS (e.g. "AL ZAWAHIRI", "PUTIN").
-    Python's str.title() handles the basic case but stumbles on:
-      - Hyphenated particles: "AL-ZAWAHIRI" → we want "Al-Zawahiri"
-      - Short Arabic particles that should stay lower: handled by leaving
-        str.title() output as-is (al- prefix is kept by OFAC on the word)
-
-    We use str.title() which correctly title-cases each word and each
-    hyphen-separated segment ("AL-ZAWAHIRI" → "Al-Zawahiri").
-
-    Args:
-        raw: A string in ALL CAPS or mixed case.
-
-    Returns:
-        Title-cased version of the string.
-    """
-    if not raw:
-        return raw
-    return raw.title()
-
-
 # Honorific prefixes that sometimes appear embedded in OFAC first_name fields.
-# We strip these out so they don't pollute firstName and store them in `title`
-# alongside any role title the record already has.
+# Stripped out so they don't pollute firstName — stored in `title` instead.
 HONORIFIC_PREFIXES = {
     "Dr.", "Dr",
     "Prof.", "Prof",
@@ -207,6 +208,8 @@ HONORIFIC_PREFIXES = {
     "Mr.", "Mr", "Mrs.", "Mrs", "Ms.", "Ms",
 }
 
+
+# ─── Name Helpers ─────────────────────────────────────────────────────────────
 
 def strip_honorific(raw_first: str) -> tuple[str | None, str | None]:
     """
@@ -220,7 +223,7 @@ def strip_honorific(raw_first: str) -> tuple[str | None, str | None]:
         raw_first: The raw first_name string from an OFAC record.
 
     Returns:
-        A tuple of (honorific_or_None, cleaned_first_or_None).
+        Tuple of (honorific_or_None, cleaned_first_or_None).
 
     Examples:
         "Dr. Ahmad"  → ("Dr.", "Ahmad")
@@ -230,7 +233,7 @@ def strip_honorific(raw_first: str) -> tuple[str | None, str | None]:
     if not raw_first or not raw_first.strip():
         return None, None
 
-    parts = raw_first.strip().split(None, 1)   # split on first whitespace only
+    parts       = raw_first.strip().split(None, 1)   # split on first whitespace only
     first_token = parts[0]
 
     if first_token in HONORIFIC_PREFIXES:
@@ -246,9 +249,6 @@ def build_full_name(first_name: str | None, last_name: str | None) -> str | None
     """
     Combine first and last name into a single display name string.
 
-    FtM's `name` property is the full human-readable name.  We build it by
-    joining whichever parts are present.
-
     Args:
         first_name: Given name, already title-cased.
         last_name:  Family name, already title-cased.
@@ -260,9 +260,7 @@ def build_full_name(first_name: str | None, last_name: str | None) -> str | None
     return " ".join(parts) if parts else None
 
 
-# ===========================================================================
-# Alias helpers
-# ===========================================================================
+# ─── Field Extractors ─────────────────────────────────────────────────────────
 
 def extract_aliases(aliases: list[dict]) -> list[str]:
     """
@@ -282,62 +280,54 @@ def extract_aliases(aliases: list[dict]) -> list[str]:
     """
     result = []
     for alias in aliases:
-        first = titlecase_name(alias.get("first_name", "") or "")
-        last  = titlecase_name(alias.get("last_name",  "") or "")
+        first = title_case_name(alias.get("first_name", "") or "")
+        last  = title_case_name(alias.get("last_name",  "") or "")
         full  = build_full_name(first or None, last or None)
         if full:
             result.append(full)
     return result
 
 
-# ===========================================================================
-# Date helpers
-# ===========================================================================
-
 def extract_birth_dates(dates_of_birth: list[dict]) -> list[str]:
     """
     Normalise all OFAC birth date entries using helpers.normalize_date().
 
     OFAC stores birth dates in several formats:
-        "03 May 1938"          → "1938-05-03"
-        "1938"                 → "1938"   (year-only, preserved as-is)
-        "circa 1940"           → "1940"   (circa stripped, year preserved)
-        "1938 to 1940"         → "1938"   (range, first year taken)
+        "03 May 1938"   → "1938-05-03"
+        "1938"          → "1938"   (year-only, preserved as-is)
+        "circa 1940"    → "1940"   (circa stripped, year preserved)
+        "1938 to 1940"  → "1938"   (range: first year taken)
 
-    normalize_date() in helpers.py handles all of these already.
+    Multiple dates are intentional — OFAC records uncertain DOBs as a list
+    of candidates.  All are preserved so dedup matching can treat any as valid.
 
     Args:
         dates_of_birth: List of dicts, each with at least a "date" key.
 
     Returns:
-        List of ISO date strings or year strings.  Entries that fail to
-        parse are silently skipped (normalize_date returns None for those).
+        List of ISO date strings or year strings.  Unparseable entries skipped.
     """
     result = []
     for entry in dates_of_birth:
-        raw = entry.get("date", "")
+        raw        = entry.get("date", "")
         normalised = normalize_date(raw)
         if normalised:
             result.append(normalised)
     return result
 
 
-# ===========================================================================
-# Country / nationality helpers
-# ===========================================================================
-
 def extract_nationalities(nationalities: list[str]) -> list[str]:
     """
     Convert OFAC nationality strings to ISO alpha-2 country codes.
 
-    to_iso_country() in helpers.py uses pycountry with overrides for
-    ambiguous names (e.g. "Iran" → "ir", "Turkey" → "tr").
+    Combines nationalities and citizenships from the raw record — both map
+    to the same FtM nationality property.
 
     Entries that can't be resolved are skipped with a warning so we don't
     silently lose data.
 
     Args:
-        nationalities: List of country name strings from OFAC raw record.
+        nationalities: List of country name strings (already merged list).
 
     Returns:
         List of ISO alpha-2 codes (e.g. ["eg", "sa"]).
@@ -348,13 +338,9 @@ def extract_nationalities(nationalities: list[str]) -> list[str]:
         if code:
             result.append(code)
         else:
-            print(f"  [WARN] Could not resolve nationality: '{country_name}'")
+            print(f"  [WARN] Country not mapped: '{country_name}' — storing as-is")
     return result
 
-
-# ===========================================================================
-# Identity document helpers
-# ===========================================================================
 
 def extract_ids(ids: list[dict]) -> dict[str, list[str]]:
     """
@@ -362,11 +348,12 @@ def extract_ids(ids: list[dict]) -> dict[str, list[str]]:
 
     Returns a dict keyed by FtM property name, e.g.:
         {
-            "passportNumber": ["AB123456", "CD789012"],
-            "idNumber":       ["12345678"]
+            "passportNumber":      ["AB123456", "CD789012"],
+            "idNumber":            ["12345678"],
+            "cryptoWalletAddress": ["1A1zP1eP..."]
         }
 
-    ID types not in ID_TYPE_MAP and not in ID_SKIP_LABELS trigger a warning
+    ID types not in ID_TYPE_MAP and not in ID_SKIP_LABELS print a warning
     so we can catch new label types in future OFAC updates.
 
     Args:
@@ -385,11 +372,10 @@ def extract_ids(ids: list[dict]) -> dict[str, list[str]]:
             continue  # empty number, nothing to store
 
         if id_type in ID_SKIP_LABELS:
-            continue  # these aren't document numbers, skip silently
+            continue  # legal boilerplate, skip silently
 
         ftm_prop = ID_TYPE_MAP.get(id_type)
         if ftm_prop is None:
-            # Unknown type — warn so we can update the map if needed
             print(f"  [WARN] Unknown ID type: '{id_type}' — skipping")
             continue
 
@@ -398,34 +384,25 @@ def extract_ids(ids: list[dict]) -> dict[str, list[str]]:
     return result
 
 
-# ===========================================================================
-# Programs → notes
-# ===========================================================================
-
 def build_programs_note(programs: list[str]) -> str | None:
     """
     Format OFAC sanctions programs as a human-readable note string.
 
-    Programs are short codes like "SDGT", "RUSSIA-EO14024".  We store them
-    in the FtM notes field so end users can see which list(s) the person
-    appears on without needing to decode the raw codes separately.
-
-    Returns None if the programs list is empty.
+    Programs are short codes like "SDGT", "RUSSIA-EO14024".  Stored in
+    notes so end users can see which list(s) the person appears on.
 
     Args:
         programs: List of program code strings.
 
     Returns:
-        A string like "Programs: SDGT, RUSSIA-EO14024", or None.
+        "Programs: SDGT, RUSSIA-EO14024" or None if list is empty.
     """
     if not programs:
         return None
     return "Programs: " + ", ".join(programs)
 
 
-# ===========================================================================
-# Core transform: one raw OFAC record → one FtM Person dict
-# ===========================================================================
+# ─── Entity Builder ───────────────────────────────────────────────────────────
 
 def normalize_record(record: dict) -> dict:
     """
@@ -433,47 +410,53 @@ def normalize_record(record: dict) -> dict:
 
     FtM (FollowTheMoney) schema: https://followthemoney.tech/explorer/
     All property values must be lists, even if there's only one value.
-    Custom metadata (sources, country codes) lives outside the properties
-    dict, following the same convention as normalize_cia.py.
+    Custom metadata (sources, ofac_uid) lives outside the properties dict,
+    following the same convention as normalize_cia.py.
+
+    NAME HANDLING:
+        last_name stored ALL CAPS in OFAC → title-cased with str.title()
+        first_name may embed an honorific (e.g. "Dr. Ahmad") → stripped out
+        Honorific stored in `title`, role description stored in `position`
+
+    POSITION VS TITLE:
+        OFAC's `title` field contains role descriptions ("General",
+        "Former President") not honorifics.  Stored in `position` so it
+        aligns with CIA data during deduplication.
+        Honorifics (Dr., Sheikh) go in `title` where they belong.
 
     Args:
         record: A single dict from ofac_raw.json.
 
     Returns:
-        An FtM Person dict ready to be written to ofac_normalized.json.
+        FtM Person dict ready to be written to ofac_normalized.json.
     """
-    uid        = record["uid"]
-    first_raw  = record.get("first_name", "") or ""
-    last_raw   = record.get("last_name",  "") or ""
-    title_raw  = record.get("title",      "") or ""
-    remarks    = record.get("remarks",    "") or ""
+    uid       = record["uid"]
+    first_raw = record.get("first_name", "") or ""
+    last_raw  = record.get("last_name",  "") or ""
+    title_raw = record.get("title",      "") or ""
+    remarks   = record.get("remarks",    "") or ""
 
     # --- Name -----------------------------------------------------------------
-    # OFAC stores last names in ALL CAPS.  title() normalises to Title Case.
-    # first_name sometimes contains an embedded honorific (e.g. "Dr. Ahmad") —
-    # strip_honorific separates those so firstName stays clean.
+    # strip_honorific splits "Dr. Ahmad" → ("Dr.", "Ahmad")
+    # last_name is ALL CAPS in OFAC — title() normalises it
     embedded_honorific, first_clean = strip_honorific(first_raw)
-    first_name = titlecase_name(first_clean) if first_clean else None
-    last_name  = titlecase_name(last_raw)    if last_raw.strip() else None
+    first_name = title_case_name(first_clean) if first_clean else None
+    last_name  = title_case_name(last_raw)    if last_raw.strip() else None
     full_name  = build_full_name(first_name, last_name)
 
-    # Merge embedded honorific with the record-level title field.
-    # e.g. record has title="General" and first_name="Dr. Ahmad"
-    # → title_parts = ["Dr.", "General"]
+    # Merge embedded honorific with record-level title field
+    # e.g. title="General", first_name="Dr. Ahmad" → title_parts=["Dr.","General"]
     title_parts = []
     if embedded_honorific:
         title_parts.append(embedded_honorific)
-    if title_raw.strip():
-        title_parts.append(title_raw.strip())
 
     # --- Deterministic ID -----------------------------------------------------
-    # We use the OFAC uid as the stable identifier.  This means re-running the
-    # pipeline will produce the same ID for the same person — safe for upserts.
+    # OFAC uid is stable across SDN list updates — safe for upserts
     person_id = make_id("ofac", uid)
 
     # --- Multi-valued fields --------------------------------------------------
-    aliases      = extract_aliases(record.get("aliases", []))
-    birth_dates  = extract_birth_dates(record.get("dates_of_birth", []))
+    aliases       = extract_aliases(record.get("aliases", []))
+    birth_dates   = extract_birth_dates(record.get("dates_of_birth", []))
     nationalities = extract_nationalities(
         record.get("nationalities", []) + record.get("citizenships", [])
     )
@@ -483,7 +466,6 @@ def normalize_record(record: dict) -> dict:
     id_props = extract_ids(record.get("ids", []))
 
     # --- Notes ----------------------------------------------------------------
-    # Combine the sanctions programs note with any remarks field
     notes = []
     programs_note = build_programs_note(record.get("programs", []))
     if programs_note:
@@ -492,104 +474,98 @@ def normalize_record(record: dict) -> dict:
         notes.append(remarks.strip())
 
     # --- Assemble FtM Person --------------------------------------------------
-    # Properties dict: every value is a list, even scalars.
-    # Empty lists are fine — FtM consumers treat them as "no value".
+    # All property values are lists — empty list means "no value"
     properties = {
-        # Core name fields
-        "name":       [full_name] if full_name else [],
+        # ── Thing (inherited) ─────────────────────────────────────────────────
+        "name":        [full_name] if full_name else [],
+        "notes":       notes,
+        "sourceUrl":   [OFAC_SOURCE_URL],
+        "retrievedAt": [RETRIEVED_AT],
+
+        # ── Person ────────────────────────────────────────────────────────────
         "firstName":  [first_name] if first_name else [],
         "lastName":   [last_name]  if last_name  else [],
-
-        # Aliases (a.k.a. entries from OFAC)
-        "alias": aliases,
-
-        # OFAC title strings describe roles loosely (e.g. "Operational and
-        # Military Leader", "Former President").  You raised a fair point:
-        # these are closer to positions than to honorifics.  We store them
-        # in `position` so they align with CIA data during deduplication —
-        # both sources end up with position values that can be compared.
-        # Honorifics (Dr., Prof., Sheikh) stay in `title` where they belong.
-        "title":    title_parts,
-        "position": [title_raw.strip()] if title_raw.strip() else [],
-
-        # FtM topic tag — all OFAC persons are sanctioned individuals
-        "topics": ["sanction"],
-
-        # Birth dates (may be multiple — OFAC tracks uncertainty with ranges)
-        "birthDate": birth_dates,
-
-        # Nationality / citizenship (ISO alpha-2 codes)
+        "alias":      aliases,
+        "title":      title_parts,
+        "position": [title_case_name(title_raw)] if title_raw.strip() else [],
+        "topics":     ["sanction"],
+        "birthDate":  birth_dates,
         "nationality": nationalities,
 
-        # Identity documents — merged in from id_props dict
+        # ── Identity documents (merged from id_props) ─────────────────────────
         **id_props,
-
-        # Notes: programs + remarks
-        "notes": notes,
-
-        # When this record was retrieved by our pipeline
-        "retrievedAt": [TODAY],
     }
 
     return {
         "schema":     "Person",
         "id":         person_id,
         "properties": properties,
-        # Custom metadata outside properties (same pattern as CIA normalizer)
-        "sources":    ["ofac_sdn"],
-        "ofac_uid":   uid,   # preserved so we can cross-reference the raw file
+        # ── Custom metadata (outside FtM properties) ──────────────────────────
+        "sources":  ["ofac_sdn"],
+        "ofac_uid": uid,   # preserved for cross-referencing ingest/ofac_raw.json
     }
 
 
-# ===========================================================================
-# Batch runner
-# ===========================================================================
+# ─── Run Function ─────────────────────────────────────────────────────────────
 
-def run() -> list[dict]:
+def run() -> dict:
     """
     Load ofac_raw.json, normalise every record, write ofac_normalized.json.
 
-    Returns the list of normalised Person dicts (useful for testing).
+    OUTPUT STRUCTURE:
+    {
+        "meta": {
+            "total_persons": 7506,
+            "sourceUrl": "https://www.treasury.gov/ofac/downloads/sdn.xml",
+            "retrieved_at":  "2026-06-03"
+        },
+        "persons": [...]
+    }
+
+    Returns the output dict so FastAPI pipeline can use data without
+    reading from disk (same pattern as normalize_cia.py).
     """
+    start = time.time()
+
     print(f"Loading {OFAC_INPUT_PATH} ...")
     with open(OFAC_INPUT_PATH, "r", encoding="utf-8") as f:
         raw_records = json.load(f)
 
-    print(f"  {len(raw_records)} raw OFAC records loaded")
+    print(f"  {len(raw_records)} raw OFAC records loaded\n")
 
     persons = []
     for record in raw_records:
         person = normalize_record(record)
         persons.append(person)
 
-    # Write output
+    elapsed = time.time() - start
+
+    output = {
+        "meta": {
+            "total_persons": len(persons),
+            "retrieved_at":  RETRIEVED_AT,
+        },
+        "persons": persons,
+    }
+
     os.makedirs(os.path.dirname(OFAC_OUTPUT_PATH), exist_ok=True)
     with open(OFAC_OUTPUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(persons, f, ensure_ascii=False, indent=2)
+        json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"\nWrote {len(persons)} persons to {OFAC_OUTPUT_PATH}")
+    # ── Summary report ────────────────────────────────────────────────────────
+    _print_summary(persons, elapsed)
 
-    # -----------------------------------------------------------------------
-    # Summary report
-    # -----------------------------------------------------------------------
-    _print_summary(raw_records, persons)
-
-    # -----------------------------------------------------------------------
-    # Verification checks
-    # -----------------------------------------------------------------------
+    # ── Verification checks ───────────────────────────────────────────────────
     _run_verification(persons)
 
-    return persons
+    return output
 
 
-# ===========================================================================
-# Summary report
-# ===========================================================================
+# ─── Summary Report ───────────────────────────────────────────────────────────
 
-def _print_summary(raw_records: list[dict], persons: list[dict]) -> None:
+def _print_summary(persons: list[dict], elapsed: float) -> None:
     """Print a quality summary after normalisation."""
 
-    # Count how many persons have each field populated
     no_first      = sum(1 for p in persons if not p["properties"]["firstName"])
     no_last       = sum(1 for p in persons if not p["properties"]["lastName"])
     no_birth_date = sum(1 for p in persons if not p["properties"]["birthDate"])
@@ -598,13 +574,19 @@ def _print_summary(raw_records: list[dict], persons: list[dict]) -> None:
     has_id_number = sum(1 for p in persons if p["properties"].get("idNumber"))
     has_nat       = sum(1 for p in persons if p["properties"]["nationality"])
 
-    # Count unique nationalities resolved
-    all_nat = set()
+    all_nat: set[str] = set()
     for p in persons:
         all_nat.update(p["properties"]["nationality"])
 
-    print("\n--- OFAC Normalisation Summary ---")
+    print(f"\n{'═' * 50}")
+    print(f"  OFAC NORMALISATION REPORT")
+    print(f"{'═' * 50}")
     print(f"  Total persons:         {len(persons)}")
+    print(f"  Completed in:          {int(elapsed//60)}m {int(elapsed%60)}s")
+    print(f"  Retrieved at:          {RETRIEVED_AT}")
+    print(f"\n{'─' * 50}")
+    print(f"  QUALITY CHECKS")
+    print(f"{'─' * 50}")
     print(f"  No first name:         {no_first}")
     print(f"  No last name:          {no_last}")
     print(f"  No birth date:         {no_birth_date}")
@@ -613,28 +595,22 @@ def _print_summary(raw_records: list[dict], persons: list[dict]) -> None:
     print(f"  Has other ID number:   {has_id_number}")
     print(f"  Has nationality:       {has_nat}")
     print(f"  Unique nationalities:  {len(all_nat)}")
-    print("----------------------------------\n")
+    print(f"{'═' * 50}\n")
 
 
-# ===========================================================================
-# Verification checks
-# ===========================================================================
+# ─── Verification Checks ──────────────────────────────────────────────────────
 
 def _run_verification(persons: list[dict]) -> None:
     """
     Run five spot-checks and print PASS / FAIL for each.
 
-    These checks are deliberately simple — they catch regressions quickly
-    without needing a test framework.
+    Deliberately simple — catches regressions quickly without a test framework.
     """
     print("--- Verification checks ---")
     passed = 0
     failed = 0
 
-    # ------------------------------------------------------------------
-    # Check 1: Count sanity — number of persons equals number of unique
-    # ofac_uid values (no duplicates created by the normaliser).
-    # ------------------------------------------------------------------
+    # 1. Count sanity — no duplicate UIDs created by the normaliser
     uids = [p["ofac_uid"] for p in persons]
     if len(uids) == len(set(uids)):
         print(f"  [PASS] 1. Count sanity: {len(persons)} persons, all UIDs unique")
@@ -644,37 +620,26 @@ def _run_verification(persons: list[dict]) -> None:
         print(f"  [FAIL] 1. Count sanity: {dupes} duplicate UIDs found")
         failed += 1
 
-    # ------------------------------------------------------------------
-    # Check 2: Al-Zawahiri — find by last name, confirm title-case,
-    # alias present, birth date present.
-    # ------------------------------------------------------------------
+    # 2. Al-Zawahiri — title-cased, alias present, birth date present
     zawahiri = [
         p for p in persons
         if "zawahiri" in " ".join(p["properties"]["lastName"]).lower()
     ]
     if zawahiri:
-        p = zawahiri[0]
-        ln    = p["properties"]["lastName"][0]
+        p         = zawahiri[0]
+        ln        = p["properties"]["lastName"][0]
         has_alias = bool(p["properties"]["alias"])
         has_dob   = bool(p["properties"]["birthDate"])
-        if ln[0].isupper() and ln[1:].islower() or "-" in ln:
-            tc_ok = True
-        else:
-            # Title case check: first char upper, not all-caps
-            tc_ok = not ln.isupper()
-        ok = tc_ok and has_alias and has_dob
+        tc_ok     = not ln.isupper()
+        ok        = tc_ok and has_alias and has_dob
         print(f"  {'[PASS]' if ok else '[FAIL]'} 2. Al-Zawahiri: "
               f"lastName='{ln}', alias={has_alias}, birthDate={has_dob}")
         passed += (1 if ok else 0)
         failed += (0 if ok else 1)
     else:
-        print("  [WARN] 2. Al-Zawahiri: record not found (may have been removed from SDN)")
-        # Not a hard failure — OFAC list changes over time
+        print("  [WARN] 2. Al-Zawahiri: not found (may have been removed from SDN)")
 
-    # ------------------------------------------------------------------
-    # Check 3: At least one person has multiple birth dates.
-    # (OFAC records with uncertain DOBs often list several candidates.)
-    # ------------------------------------------------------------------
+    # 3. Multi-DOB — at least one person has multiple birth dates
     multi_dob = [p for p in persons if len(p["properties"]["birthDate"]) > 1]
     if multi_dob:
         example = multi_dob[0]
@@ -686,16 +651,10 @@ def _run_verification(persons: list[dict]) -> None:
         print("  [FAIL] 3. Multi-DOB: no person found with multiple birth dates")
         failed += 1
 
-    # ------------------------------------------------------------------
-    # Check 4: No ALL-CAPS last names remain in the output.
-    # A last name is considered still-broken if it's all-caps and longer
-    # than 2 chars (to allow legit 2-letter abbreviations like "OH").
-    # ------------------------------------------------------------------
+    # 4. No ALL-CAPS last names remain (>2 chars to allow abbreviations)
     all_caps_last = [
         p for p in persons
         if p["properties"]["lastName"]
-        and p["properties"]["lastName"][0].isupper()
-        and p["properties"]["lastName"][0] == p["properties"]["lastName"][0].upper()
         and len(p["properties"]["lastName"][0]) > 2
         and p["properties"]["lastName"][0].replace("-", "").replace(" ", "").isupper()
     ]
@@ -707,9 +666,7 @@ def _run_verification(persons: list[dict]) -> None:
         print(f"  [FAIL] 4. {len(all_caps_last)} ALL-CAPS last names remain, e.g.: {examples}")
         failed += 1
 
-    # ------------------------------------------------------------------
-    # Check 5: Programs appear in notes for at least one person.
-    # ------------------------------------------------------------------
+    # 5. Programs appear in notes for at least one person
     programs_in_notes = [
         p for p in persons
         if any("Programs:" in note for note in p["properties"]["notes"])
@@ -729,9 +686,7 @@ def _run_verification(persons: list[dict]) -> None:
     print("---------------------------\n")
 
 
-# ===========================================================================
-# Entry point
-# ===========================================================================
+# ─── Entry Point ──────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     run()

@@ -14,12 +14,14 @@ Contains:
     - to_iso_country(): country name to ISO alpha-2 code
     - expand_abbreviations(): expand CIA title abbreviations
     - normalize_date(): normalize various date formats to YYYY-MM-DD
+    - title_case_name(): title-case a name while preserving known particles and suffixes
     - split_cia_name(): split CIA name string into components
     - verify_country_mappings(): test country mappings against known strings
 """
 
 import re
 import uuid
+from altair import value
 import pycountry
 import dateparser
 from datetime import datetime
@@ -65,6 +67,7 @@ COUNTRY_OVERRIDES = {
     "Korea, North":                      "kp",
     "Korea, South":                      "kr",
     "Burma":                             "mm",
+    "Burma":                             "zm",
     "Bahamas, The":                      "bs",
     "Gambia, The":                       "gm",
     "Congo, Democratic Republic of the": "cd",
@@ -356,6 +359,15 @@ def normalize_date(raw):
     print(f"  [WARN] Could not normalize date: '{raw}'")
     return original
 
+def title_case_name(name):
+    """
+    Converts a name string to title case for consistent display.
+    Uses Python's built-in .title() which handles most cases correctly.
+    Known limitation: "McDonald" becomes "Mcdonald"
+    """
+    if not name:
+        return name
+    return name.strip().title()
 
 def split_cia_name(raw_name, country_code=""):
     """
@@ -474,13 +486,13 @@ def split_cia_name(raw_name, country_code=""):
             if DEBUG:
                 print(f"  [DEBUG] split_cia_name: Burma mononym → last='{last_name}'")
             return {
-                "first_name": None,
-                "last_name": last_name,
+                "first_name": title_case_name(first_name),
+                "last_name": title_case_name(last_name),
                 "suffix": None,
                 "alias": alias,
                 "embedded_honorific": embedded_honorific,
             }
-
+ 
     # ── Strategy 5: Monarch/regnal name ──────────────────────────────────────
     # e.g. "CHARLES III", "WILLEM-ALEXANDER"
     # Trigger: all non-numeral tokens are CAPS + Roman numeral at end
