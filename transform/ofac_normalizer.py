@@ -4,10 +4,6 @@ transform/normalize_ofac.py
 Transforms ingest/ofac_raw.json into FtM-shaped Person entities and writes
 them to transform/ofac_normalized.json.
 
-Unlike the CIA normalizer, OFAC records carry NO position/role data — we
-only know that a person is sanctioned.  So this file produces only Person
-entities (no Occupancy entities).
-
 Run:
     python transform/normalize_ofac.py
 
@@ -35,6 +31,7 @@ WHAT OFAC DATA GIVES US:
         ids              → passportNumber / idNumber / cryptoWalletAddress
         programs         → Person.notes    ("Programs: SDGT, ...")
         remarks          → Person.notes    (appended after programs)
+        addresses         → Person.address  (formatted as "City, State, Country")
 
 WHAT WE CANNOT GET FROM OFAC (left empty):
         position is loose role description, not a verified government title
@@ -358,6 +355,40 @@ def extract_country_codes(country_names: list[str]) -> list[str]:
             print(f"  [WARN] Country not mapped: '{country_name}' — storing as-is")
     return result
 
+def extract_addresses(addresses: list[dict]) -> list[str]:
+    """
+    Format OFAC address dicts into human-readable strings.
+
+    Each address dict has city, country, state_or_province, postal_code.
+    We join whichever parts are present into a single display string.
+    Stored in FtM's `address` property as a list of strings.
+
+    Args:
+        addresses: List of address dicts from the OFAC raw record.
+
+    Returns:
+        List of address strings, duplicates removed.
+    """
+    seen   = set()
+    result = []
+
+    for addr in addresses:
+        parts = [
+            addr.get("city",              "").strip(),
+            addr.get("state_or_province", "").strip(),
+            addr.get("country",           "").strip(),
+        ]
+        # postal code appended only if present
+        postal = addr.get("postal_code", "").strip()
+        if postal:
+            parts.append(postal)
+
+        formatted = ", ".join(p for p in parts if p)
+        if formatted and formatted not in seen:
+            seen.add(formatted)
+            result.append(formatted)
+
+    return result
 
 def extract_ids(ids: list[dict]) -> dict[str, list[str]]:
     """
@@ -476,6 +507,7 @@ def normalize_record(record: dict) -> dict:
     birth_dates   = extract_birth_dates(record.get("dates_of_birth", []))
     nationalities = extract_country_codes(record.get("nationalities", []))
     citizenships  = extract_country_codes(record.get("citizenships", []))
+    addresses = extract_addresses(record.get("addresses", []))
 
     # --- Identity documents ---------------------------------------------------
     # Returns e.g. {"passportNumber": ["AB123456"], "idNumber": ["12345678"]}
@@ -508,6 +540,7 @@ def normalize_record(record: dict) -> dict:
         "birthDate":  birth_dates,
         "nationality": nationalities,
         "citizenship": citizenships,
+        "address":    addresses,
         # ── Identity documents (merged from id_props) ─────────────────────────
         **id_props,
     }
