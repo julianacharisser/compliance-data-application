@@ -620,8 +620,8 @@ def split_cia_name(raw_name, country_code=""):
         print(f"  [DEBUG] split_cia_name: nameparser → first='{first_name}' last='{last_name}' suffix='{suffix}'")
 
     return {
-        "first_name": first_name,
-        "last_name": last_name,
+        "first_name": title_case_name(first_name),
+        "last_name": title_case_name(last_name),
         "suffix": suffix,
         "alias": alias,
         "embedded_honorific": embedded_honorific,

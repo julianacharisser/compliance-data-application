@@ -44,11 +44,22 @@ SKIPPED RECORDS:
 import json
 import time
 from datetime import date
+
+# ─── Imports ──────────────────────────────────────────────────────────────────
+import json
+import time
+from datetime import date
+
+# helpers.py lives in the same transform/ directory.
+#   make_id(source, *parts)  — UUID5 deterministic ID
+#   to_iso_country(name)     — country name → ISO alpha-2 code (e.g. "eg")
+#   expand_abbreviations(raw) — expands job title abbreviations e.g. "PM" → "Prime Minister"
+#   split_cia_name(raw_name, country_code) — splits CIA name into components using
 from helpers import (
     make_id,
     to_iso_country,
     expand_abbreviations,
-    split_cia_name,
+    split_cia_name
 )
 
 # ─── Constants ────────────────────────────────────────────────────────────────
