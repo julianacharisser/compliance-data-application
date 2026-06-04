@@ -31,7 +31,7 @@ WHAT OFAC DATA GIVES US:
         aliases          → Person.alias     (all a.k.a. entries)
         dates_of_birth   → Person.birthDate (multiple = OFAC uncertainty)
         nationalities    → Person.nationality (ISO alpha-2)
-        citizenships     → Person.nationality (merged with nationalities)
+        citizenships     → Person.citizenship (ISO alpha-2)
         ids              → passportNumber / idNumber / cryptoWalletAddress
         programs         → Person.notes    ("Programs: SDGT, ...")
         remarks          → Person.notes    (appended after programs)
@@ -61,6 +61,8 @@ import json
 import os
 import time
 from datetime import date
+
+from numpy import record
 
 # ─── Imports ──────────────────────────────────────────────────────────────────
 # helpers.py lives in the same transform/ directory.
@@ -259,6 +261,26 @@ def build_full_name(first_name: str | None, last_name: str | None) -> str | None
     parts = [p for p in [first_name, last_name] if p]
     return " ".join(parts) if parts else None
 
+# ─── Country Helpers ─────────────────────────────────────────────────────────
+def to_iso_codes(country_names: list[str]) -> list[str]:
+    """
+    Convert a list of country name strings to ISO alpha-2 codes.
+    Entries that can't be resolved are skipped with a warning.
+
+    Args:
+        country_names: List of country name strings e.g. ["Russia", "Iran"]
+
+    Returns:
+        List of ISO alpha-2 codes e.g. ["ru", "ir"]
+    """
+    result = []
+    for country_name in country_names:
+        code = to_iso_country(country_name)
+        if code:
+            result.append(code)
+        else:
+            print(f"  [WARN] Country not mapped: '{country_name}' — storing as-is")
+    return result
 
 # ─── Field Extractors ─────────────────────────────────────────────────────────
 
@@ -316,24 +338,19 @@ def extract_birth_dates(dates_of_birth: list[dict]) -> list[str]:
     return result
 
 
-def extract_nationalities(nationalities: list[str]) -> list[str]:
+def extract_country_codes(country_names: list[str]) -> list[str]:
     """
-    Convert OFAC nationality strings to ISO alpha-2 country codes.
-
-    Combines nationalities and citizenships from the raw record — both map
-    to the same FtM nationality property.
-
-    Entries that can't be resolved are skipped with a warning so we don't
-    silently lose data.
+    Convert a list of country name strings to ISO alpha-2 codes.
+    Entries that can't be resolved are skipped with a warning.
 
     Args:
-        nationalities: List of country name strings (already merged list).
+        country_names: List of country name strings e.g. ["Russia", "Iran"]
 
     Returns:
-        List of ISO alpha-2 codes (e.g. ["eg", "sa"]).
+        List of ISO alpha-2 codes e.g. ["ru", "ir"]
     """
     result = []
-    for country_name in nationalities:
+    for country_name in country_names:
         code = to_iso_country(country_name)
         if code:
             result.append(code)
@@ -457,9 +474,8 @@ def normalize_record(record: dict) -> dict:
     # --- Multi-valued fields --------------------------------------------------
     aliases       = extract_aliases(record.get("aliases", []))
     birth_dates   = extract_birth_dates(record.get("dates_of_birth", []))
-    nationalities = extract_nationalities(
-        record.get("nationalities", []) + record.get("citizenships", [])
-    )
+    nationalities = extract_country_codes(record.get("nationalities", []))
+    citizenships  = extract_country_codes(record.get("citizenships", []))
 
     # --- Identity documents ---------------------------------------------------
     # Returns e.g. {"passportNumber": ["AB123456"], "idNumber": ["12345678"]}
@@ -491,7 +507,7 @@ def normalize_record(record: dict) -> dict:
         "topics":     ["sanction"],
         "birthDate":  birth_dates,
         "nationality": nationalities,
-
+        "citizenship": citizenships,
         # ── Identity documents (merged from id_props) ─────────────────────────
         **id_props,
     }
@@ -573,6 +589,7 @@ def _print_summary(persons: list[dict], elapsed: float) -> None:
     has_passport  = sum(1 for p in persons if p["properties"].get("passportNumber"))
     has_id_number = sum(1 for p in persons if p["properties"].get("idNumber"))
     has_nat       = sum(1 for p in persons if p["properties"]["nationality"])
+    has_cit       = sum(1 for p in persons if p["properties"]["citizenship"])
 
     all_nat: set[str] = set()
     for p in persons:
@@ -594,6 +611,7 @@ def _print_summary(persons: list[dict], elapsed: float) -> None:
     print(f"  Has passport number:   {has_passport}")
     print(f"  Has other ID number:   {has_id_number}")
     print(f"  Has nationality:       {has_nat}")
+    print(f"  Has citizenship:       {has_cit}")
     print(f"  Unique nationalities:  {len(all_nat)}")
     print(f"{'═' * 50}\n")
 
