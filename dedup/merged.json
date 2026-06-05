@@ -1,0 +1,8649 @@
+[
+  {
+    "schema": "Person",
+    "id": "a62082bb-02ac-54a1-a89f-a0e1812e97ab",
+    "properties": {
+      "name": [
+        "Thet Khaing Win"
+      ],
+      "firstName": [
+        "Thet Khaing"
+      ],
+      "lastName": [
+        "Win"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Thet Kaing Win"
+      ],
+      "position": [
+        "Minister of Health",
+        "Minister Of Health And Sports"
+      ],
+      "title": [
+        "Dr."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1961-11-14"
+      ],
+      "nationality": [
+        "zm"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "DM004668"
+      ],
+      "idNumber": [
+        "12KAMATAN043299"
+      ],
+      "address": [
+        "Naypyitaw, Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "31923",
+    "merged_from": [
+      "a62082bb-02ac-54a1-a89f-a0e1812e97ab",
+      "ad2805d2-ea35-5cb9-b77b-c679abdeddcb"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "e34a8c44-98dd-5ac0-bc86-3b7b3542af48",
+    "properties": {
+      "name": [
+        "Myint Kyaing"
+      ],
+      "firstName": [
+        "Myint"
+      ],
+      "lastName": [
+        "Kyaing"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "U Myint Kyaing"
+      ],
+      "position": [
+        "Minister of Immigration & Population",
+        "Minister For Labor, Immigration, And Population"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1957-04-17"
+      ],
+      "nationality": [
+        "zm"
+      ],
+      "citizenship": [
+        "zm"
+      ],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "32293",
+    "merged_from": [
+      "e34a8c44-98dd-5ac0-bc86-3b7b3542af48",
+      "54c8d4bc-15b5-51d0-9721-332344f95224"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "9d54415d-7bd7-5fd1-a802-831857a8bde0",
+    "properties": {
+      "name": [
+        "Khin Maung Yi"
+      ],
+      "firstName": [
+        "Khin Maung"
+      ],
+      "lastName": [
+        "Yi"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Khin Mg Yi",
+        "Khin Maung Yee",
+        "Khin Mg Yee",
+        "U Khin Maung Yee",
+        "U Khin Maung Yi"
+      ],
+      "position": [
+        "Minister of the President’s Office",
+        "Minister For Natural Resources And Environmental Conservation"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1965-02-15"
+      ],
+      "nationality": [
+        "zm"
+      ],
+      "citizenship": [
+        "zm"
+      ],
+      "passportNumber": [
+        "DM000956"
+      ],
+      "idNumber": [
+        "14HATHATAN059290",
+        "13MAYATANAING002216"
+      ],
+      "address": [
+        "Naypyitaw, Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "31924",
+    "merged_from": [
+      "9d54415d-7bd7-5fd1-a802-831857a8bde0",
+      "ea94ea94-8ff4-50f5-9f95-b89370a17a71"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "dbd56978-3c91-5cb4-a160-a74b25559ff1",
+    "properties": {
+      "name": [
+        "Oscar Rolando Castro"
+      ],
+      "firstName": [
+        "Oscar"
+      ],
+      "lastName": [
+        "Rolando Castro"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Ronaldo Castro"
+      ],
+      "position": [
+        "Minister of Agriculture & Livestock",
+        "Salvadoran Minister Of Labor"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1973-04-22"
+      ],
+      "nationality": [
+        "sv"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "DA000293"
+      ],
+      "idNumber": [
+        "007591947"
+      ],
+      "address": [
+        "El Salvador"
+      ],
+      "notes": [
+        "Programs: GLOMAG"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/el-salvador/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "El Salvador",
+    "country_code": "sv",
+    "date_updated": "",
+    "ofac_uid": "40142",
+    "merged_from": [
+      "dbd56978-3c91-5cb4-a160-a74b25559ff1",
+      "dd5df561-497b-5864-a00e-77d1aa004542"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "cc616297-3e2c-5035-bb7f-1fdb127363a5",
+    "properties": {
+      "name": [
+        "Song Kim"
+      ],
+      "firstName": [
+        "Song"
+      ],
+      "lastName": [
+        "Kim"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "So'Ng Kim"
+      ],
+      "position": [
+        "Permanent Representative to the UN, New York",
+        "Representative Of The Korea Ryonbong General Corporation In Linjiang, China"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1964-01-11"
+      ],
+      "nationality": [
+        "kp"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Linjiang, China"
+      ],
+      "notes": [
+        "Programs: DPRK2"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "23508",
+    "merged_from": [
+      "cc616297-3e2c-5035-bb7f-1fdb127363a5",
+      "118a1ba5-17c3-5ef9-b6da-2b5c86ddb3a2"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "19d89641-666f-5f5d-a65b-d189af5e95fe",
+    "properties": {
+      "name": [
+        "Vladimir Vladimirovich Putin"
+      ],
+      "firstName": [
+        "Vladimir Vladimirovich"
+      ],
+      "lastName": [
+        "Putin"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Vladimir Putin"
+      ],
+      "position": [
+        "President",
+        "President Of The Russian Federation"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1952-10-07"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [
+        "ru"
+      ],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Moscow, Russia",
+        "Moscow Region, Russia",
+        "Sochi, Russia",
+        "Novgorod Region, Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "35096",
+    "merged_from": [
+      "19d89641-666f-5f5d-a65b-d189af5e95fe",
+      "dd11d8a6-1c47-576a-bd7d-9e859c70bbae"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "a7ef6f2b-def0-5e28-8b24-11994bcbf1a1",
+    "properties": {
+      "name": [
+        "Elvira Sakhipzadovna Nabiullina"
+      ],
+      "firstName": [
+        "Elvira Sakhipzadovna"
+      ],
+      "lastName": [
+        "Nabiullina"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Chairman, Central Bank of Russia",
+        "Governor Of The Central Bank Of The Russian Federation"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1963-10-29"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Moscow, Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "35797",
+    "merged_from": [
+      "a7ef6f2b-def0-5e28-8b24-11994bcbf1a1",
+      "bf4ed30c-c5b8-514e-a182-2cf05077c2fe"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "c77a5bb1-cfd5-5872-9ec9-9811ba60728d",
+    "properties": {
+      "name": [
+        "Benjamin Bol Mel Kuol"
+      ],
+      "firstName": [
+        "Benjamin Bol Mel"
+      ],
+      "lastName": [
+        "Kuol"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Benjamin Bol Mel Kuol",
+        "Benjamin Bol Mol Kuot",
+        "Benjamin Bor",
+        "Benjamin Bol"
+      ],
+      "position": [
+        "Vice President (2nd)",
+        "President Of Abmc Thai-South Sudan Construction Company"
+      ],
+      "title": [
+        "Dr."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1978-01-03",
+        "1978-12-24"
+      ],
+      "nationality": [
+        "ss",
+        "sd"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "B00000006"
+      ],
+      "idNumber": [],
+      "address": [
+        "Nairobi, Kenya, 00202",
+        "Juba, Central Equatoria, South Sudan",
+        "Juba, South Sudan"
+      ],
+      "notes": [
+        "Programs: GLOMAG"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/south-sudan/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "South Sudan",
+    "country_code": "ss",
+    "date_updated": "",
+    "ofac_uid": "23283",
+    "merged_from": [
+      "c77a5bb1-cfd5-5872-9ec9-9811ba60728d",
+      "965a6cd1-096d-5eb6-a3da-47c2d8d0fcde"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "847c616c-7fac-5e18-8cd4-83659e454a1f",
+    "properties": {
+      "name": [
+        "Michael Makuei Lueth"
+      ],
+      "firstName": [
+        "Michael Makuei"
+      ],
+      "lastName": [
+        "Lueth"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Michael Makuei",
+        "Michael Makwei Lueth",
+        "Michael Makuei Lueth Makuei"
+      ],
+      "position": [
+        "Minister of Information",
+        "Minister Of Information And Broadcasting; Minister Of Information, Broadcasting, Telecommunication And Postal Services; Government Spokesperson"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1947"
+      ],
+      "nationality": [
+        "ss",
+        "sd",
+        "ke"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Juba, South Sudan"
+      ],
+      "notes": [
+        "Programs: SOUTH SUDAN"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/south-sudan/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "South Sudan",
+    "country_code": "ss",
+    "date_updated": "",
+    "ofac_uid": "20998",
+    "merged_from": [
+      "847c616c-7fac-5e18-8cd4-83659e454a1f",
+      "affd01c7-7dc5-5838-b9e3-b7ba54072d68"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "be794450-1d28-5aeb-8689-c472c3831c2a",
+    "properties": {
+      "name": [
+        "Emmerson Dambudzo Mnangagwa"
+      ],
+      "firstName": [
+        "Emmerson Dambudzo"
+      ],
+      "lastName": [
+        "Mnangagwa"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Crocodile",
+        "Emmerson Mnangagwa"
+      ],
+      "position": [
+        "President",
+        "President Of Zimbabwe"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1946-09-15",
+        "1942-09-15"
+      ],
+      "nationality": [
+        "zw"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "AD005831",
+        "AD006846"
+      ],
+      "idNumber": [
+        "63450183P67"
+      ],
+      "address": [
+        "Harare, Zimbabwe"
+      ],
+      "notes": [
+        "Programs: GLOMAG"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/zimbabwe/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Zimbabwe",
+    "country_code": "zw",
+    "date_updated": "",
+    "ofac_uid": "7513",
+    "merged_from": [
+      "be794450-1d28-5aeb-8689-c472c3831c2a",
+      "38a38392-3af8-5618-b95d-bb829bb533dd"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "9f7f1740-b4dd-5baa-9f5c-0df51713cbf6",
+    "properties": {
+      "name": [
+        "Sergey Viktorovich Lavrov"
+      ],
+      "firstName": [
+        "Sergey Viktorovich"
+      ],
+      "lastName": [
+        "Lavrov"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Sergey Lavrov"
+      ],
+      "position": [
+        "Minister of Foreign Affairs",
+        "Minister Of Foreign Affairs Of The Russian Federation"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1950-03-21"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "35233",
+    "merged_from": [
+      "9f7f1740-b4dd-5baa-9f5c-0df51713cbf6",
+      "e2cf87c6-53f3-5425-9a53-7060cadb523b"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "7761ba11-48e5-505e-9dac-b7014646adda",
+    "properties": {
+      "name": [
+        "Tun Aung"
+      ],
+      "firstName": [
+        "Tun"
+      ],
+      "lastName": [
+        "Aung"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Htun Htun Naung",
+        "Tun Tun Naing"
+      ],
+      "position": [
+        "Minister of Defense",
+        "Union Minister Of Border Affairs"
+      ],
+      "title": [
+        "Gen."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1963-04-30"
+      ],
+      "nationality": [
+        "zm"
+      ],
+      "citizenship": [
+        "zm"
+      ],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "31775",
+    "merged_from": [
+      "7761ba11-48e5-505e-9dac-b7014646adda",
+      "71e2c383-be37-5093-847b-bcdc810d2990"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "d6349380-567c-5b96-abf4-ddcd3faa1f5a",
+    "properties": {
+      "name": [
+        "Khin Maung Soe"
+      ],
+      "firstName": [
+        "Khin Maung"
+      ],
+      "lastName": [
+        "Soe"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Khin Mg Yi",
+        "Khin Maung Yee",
+        "Khin Mg Yee",
+        "U Khin Maung Yee",
+        "U Khin Maung Yi"
+      ],
+      "position": [
+        "Minister of Labor",
+        "Minister For Natural Resources And Environmental Conservation"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1965-02-15"
+      ],
+      "nationality": [
+        "zm"
+      ],
+      "citizenship": [
+        "zm"
+      ],
+      "passportNumber": [
+        "DM000956"
+      ],
+      "idNumber": [
+        "14HATHATAN059290",
+        "13MAYATANAING002216"
+      ],
+      "address": [
+        "Naypyitaw, Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "31924",
+    "merged_from": [
+      "d6349380-567c-5b96-abf4-ddcd3faa1f5a",
+      "ea94ea94-8ff4-50f5-9f95-b89370a17a71"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "505bfc47-dc10-5cb8-a9fb-b8b04e6cbae4",
+    "properties": {
+      "name": [
+        "Mohammad Khalid"
+      ],
+      "firstName": [
+        "Mohammad"
+      ],
+      "lastName": [
+        "Khalid"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Shaikh Al-Hadith Mohammad Khalid Hanafi",
+        "Mohammad Khalid Hanafi",
+        "Khalid, Mohamad",
+        "Shaykh Muhammad Khalid Hanafi"
+      ],
+      "position": [
+        "Minister of Preaching, Promotion of Virtue, & Prevention of Vice"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1971"
+      ],
+      "nationality": [
+        "af"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Afghanistan"
+      ],
+      "notes": [
+        "Programs: GLOMAG"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/afghanistan/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Afghanistan",
+    "country_code": "af",
+    "date_updated": "",
+    "ofac_uid": "45128",
+    "merged_from": [
+      "505bfc47-dc10-5cb8-a9fb-b8b04e6cbae4",
+      "e28a5b29-87ad-5476-9e62-b2fe05c240fe"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "8cb8bc43-f17b-5c0d-8fe9-2d13d31546f2",
+    "properties": {
+      "name": [
+        "Alyaksandr Lukashenka"
+      ],
+      "firstName": [
+        "Alyaksandr"
+      ],
+      "lastName": [
+        "Lukashenka"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Aleksandr Grigorevich Lukashenko",
+        "Alexandr Grigorievich Lukashenko",
+        "Alexander Grigoryevich Lukashenko",
+        "Alyaksandr Hryhoryavich Lukashenka",
+        "Aleksander Grigoriyevich Lukashenko"
+      ],
+      "position": [
+        "President"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1954-08-30",
+        "1954-08-31"
+      ],
+      "nationality": [
+        "by"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Minsk, Belarus"
+      ],
+      "notes": [
+        "Programs: BELARUS"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/belarus/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Belarus",
+    "country_code": "by",
+    "date_updated": "",
+    "ofac_uid": "9760",
+    "merged_from": [
+      "8cb8bc43-f17b-5c0d-8fe9-2d13d31546f2",
+      "4eb30dd0-e9c8-51bf-bc62-fc4d7bf7f843"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "3afb7462-148f-50a2-836c-555110935408",
+    "properties": {
+      "name": [
+        "Viktar Khrenin"
+      ],
+      "firstName": [
+        "Viktar"
+      ],
+      "lastName": [
+        "Khrenin"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Viktar Henadzevich Khrenin",
+        "Viktar Genadzevich Khrenin",
+        "Viktar Gienadzjevich Khrenin",
+        "Victor Khrenin"
+      ],
+      "position": [
+        "Minister of Defense"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1971-08-01"
+      ],
+      "nationality": [
+        "by"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "KH2594621"
+      ],
+      "idNumber": [
+        "3010871K003PB1"
+      ],
+      "address": [
+        "Minsk, Belarus"
+      ],
+      "notes": [
+        "Programs: BELARUS-EO14038"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/belarus/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Belarus",
+    "country_code": "by",
+    "date_updated": "",
+    "ofac_uid": "34746",
+    "merged_from": [
+      "3afb7462-148f-50a2-836c-555110935408",
+      "6ed68c63-69f8-508c-9c3f-2db57c207650"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "acc125dd-4ed4-5d50-ac93-f7851e7941ce",
+    "properties": {
+      "name": [
+        "Ivan Tertel"
+      ],
+      "firstName": [
+        "Ivan"
+      ],
+      "lastName": [
+        "Tertel"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Ivan Stanislavovich Tertel",
+        "Ivan Stanislavavich Tertel"
+      ],
+      "position": [
+        "Chairman, Committee for State Security (BKGB)"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1966-09-08"
+      ],
+      "nationality": [
+        "by"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Minsk, Belarus"
+      ],
+      "notes": [
+        "Programs: BELARUS"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/belarus/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Belarus",
+    "country_code": "by",
+    "date_updated": "",
+    "ofac_uid": "32277",
+    "merged_from": [
+      "acc125dd-4ed4-5d50-ac93-f7851e7941ce",
+      "ee2898ac-5157-5173-ac23-c7dac565cabc"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "71843300-ef3f-5160-bf9a-6815fd90d030",
+    "properties": {
+      "name": [
+        "Andrey Shved"
+      ],
+      "firstName": [
+        "Andrey"
+      ],
+      "lastName": [
+        "Shved"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Andrei Ivanovich Shved",
+        "Andrey Ivanovich Shved"
+      ],
+      "position": [
+        "Prosecutor General"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1973-04-21"
+      ],
+      "nationality": [
+        "by"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Belarus"
+      ],
+      "notes": [
+        "Programs: BELARUS"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/belarus/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Belarus",
+    "country_code": "by",
+    "date_updated": "",
+    "ofac_uid": "31871",
+    "merged_from": [
+      "71843300-ef3f-5160-bf9a-6815fd90d030",
+      "217b5921-ab71-5d02-b73b-54707404e3ce"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "40dc6e88-31c2-58d0-9e4d-ca4288801a59",
+    "properties": {
+      "name": [
+        "Kan Zaw"
+      ],
+      "firstName": [
+        "Kan"
+      ],
+      "lastName": [
+        "Zaw"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Finance & Revenue"
+      ],
+      "title": [
+        "Dr."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1954-10-11"
+      ],
+      "nationality": [
+        "zm"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "45813",
+    "merged_from": [
+      "40dc6e88-31c2-58d0-9e4d-ca4288801a59",
+      "083c410c-62dc-51be-a045-685d8ab248d5"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "02c196a0-75e4-5a59-9330-bda79605215b",
+    "properties": {
+      "name": [
+        "Charlie Than"
+      ],
+      "firstName": [
+        "Charlie"
+      ],
+      "lastName": [
+        "Than"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Industry & Micro, Small, & Medium Enterprise Development"
+      ],
+      "title": [
+        "Dr."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1950"
+      ],
+      "nationality": [
+        "zm"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Yangon, Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "45812",
+    "merged_from": [
+      "02c196a0-75e4-5a59-9330-bda79605215b",
+      "e7ad0206-0a8d-5ce7-a6ed-da51309bf46a"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "8bfebf3d-d2e1-51f2-80ad-b9825a093331",
+    "properties": {
+      "name": [
+        "Thida Oo"
+      ],
+      "firstName": [
+        "Thida"
+      ],
+      "lastName": [
+        "Oo"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Daw Thida Oo",
+        "Thi Da Oo"
+      ],
+      "position": [
+        "Minister of Legal Affairs",
+        "Union Attorney General"
+      ],
+      "title": [
+        "Dr."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1964-11-27"
+      ],
+      "nationality": [
+        "zm"
+      ],
+      "citizenship": [
+        "zm"
+      ],
+      "passportNumber": [
+        "DM003921"
+      ],
+      "idNumber": [],
+      "address": [
+        "Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "32757",
+    "merged_from": [
+      "8bfebf3d-d2e1-51f2-80ad-b9825a093331",
+      "86802f9b-c92c-534d-8ff9-714ab4fce450"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "cdd8b352-c89d-507f-b19d-8850b50d0595",
+    "properties": {
+      "name": [
+        "Soe Win"
+      ],
+      "firstName": [
+        "Soe"
+      ],
+      "lastName": [
+        "Win"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Social Welfare, Relief, & Resettlement"
+      ],
+      "title": [
+        "Dr."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1969-03-26"
+      ],
+      "nationality": [
+        "zm"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "MD222228"
+      ],
+      "idNumber": [
+        "9/MANAMAN031190"
+      ],
+      "address": [
+        "Bahan Township, Yangon, Burma, 11201",
+        "54-Thuwunna Thingangyun Township, Yangon, Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014",
+        "(Linked To: LATT, Tun Min)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "41188",
+    "merged_from": [
+      "cdd8b352-c89d-507f-b19d-8850b50d0595",
+      "c6fd49b1-958e-5e70-9c4e-1c580057f88b"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "022bbb79-8d51-54ec-abfd-0b23f4be3553",
+    "properties": {
+      "name": [
+        "Gustavo Petro Urrego"
+      ],
+      "firstName": [
+        "Gustavo"
+      ],
+      "lastName": [
+        "Petro Urrego"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "President"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1960-04-19"
+      ],
+      "nationality": [
+        "co"
+      ],
+      "citizenship": [
+        "co",
+        "it"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "208079"
+      ],
+      "address": [
+        "Bogota, Colombia"
+      ],
+      "notes": [
+        "Programs: ILLICIT-DRUGS-EO14059"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/colombia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Colombia",
+    "country_code": "co",
+    "date_updated": "",
+    "ofac_uid": "56062",
+    "merged_from": [
+      "022bbb79-8d51-54ec-abfd-0b23f4be3553",
+      "1ae86cf9-ccf8-564c-9c94-cfed5b941089"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "916e711b-5ecb-5a02-affd-b48aaabf2bc2",
+    "properties": {
+      "name": [
+        "Mayra Arevich Marin"
+      ],
+      "firstName": [
+        "Mayra"
+      ],
+      "lastName": [
+        "Arevich Marin"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Communication"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1966"
+      ],
+      "nationality": [
+        "cu"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Cuba"
+      ],
+      "notes": [
+        "Programs: CUBA-EO14404"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/cuba/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Cuba",
+    "country_code": "cu",
+    "date_updated": "",
+    "ofac_uid": "57727",
+    "merged_from": [
+      "916e711b-5ecb-5a02-affd-b48aaabf2bc2",
+      "258947f2-5523-5945-830d-ff9045bd70b8"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "5bae5d9f-85e1-5aa2-9cd8-48ba01a971aa",
+    "properties": {
+      "name": [
+        "Vicente De La O Levy"
+      ],
+      "firstName": [
+        "Vicente"
+      ],
+      "lastName": [
+        "De La O Levy"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Energy & Mines"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1962-04-25"
+      ],
+      "nationality": [
+        "cu"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Havana, Cuba"
+      ],
+      "notes": [
+        "Programs: CUBA-EO14404"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/cuba/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Cuba",
+    "country_code": "cu",
+    "date_updated": "",
+    "ofac_uid": "57726",
+    "merged_from": [
+      "5bae5d9f-85e1-5aa2-9cd8-48ba01a971aa",
+      "adba0e71-f456-579a-99a9-856c339d2bd0"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "914227d7-ea88-56fa-8eb9-2ab9f53c5bd9",
+    "properties": {
+      "name": [
+        "Alvaro Lopez Miera"
+      ],
+      "firstName": [
+        "Alvaro Lopez"
+      ],
+      "lastName": [
+        "Miera"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of the Revolutionary Armed Forces"
+      ],
+      "title": [
+        "Corps Gen."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1943-12-26"
+      ],
+      "nationality": [
+        "cu"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Cuba"
+      ],
+      "notes": [
+        "Programs: GLOMAG"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/cuba/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Cuba",
+    "country_code": "cu",
+    "date_updated": "",
+    "ofac_uid": "32628",
+    "merged_from": [
+      "914227d7-ea88-56fa-8eb9-2ab9f53c5bd9",
+      "a13be4ad-c295-5db7-a14d-b5b136bd6ec5"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "3b010830-4c7f-51c8-b05c-d12a854b19eb",
+    "properties": {
+      "name": [
+        "Mohammad Atabak"
+      ],
+      "firstName": [
+        "Mohammad"
+      ],
+      "lastName": [
+        "Atabak"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Seyed Mohammad Atabak",
+        "Mohammad Atabak"
+      ],
+      "position": [
+        "Minister of Industry, Mining, & Trade"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [],
+      "nationality": [
+        "ir"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [
+        "0039263215"
+      ],
+      "address": [
+        "Iran"
+      ],
+      "notes": [
+        "Programs: IRAN-EO13876",
+        "(Linked To: KAVEH PARS MINING INDUSTRIES DEVELOPMENT COMPANY)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/iran/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Iran",
+    "country_code": "ir",
+    "date_updated": "",
+    "ofac_uid": "30376",
+    "merged_from": [
+      "3b010830-4c7f-51c8-b05c-d12a854b19eb",
+      "5f08e0e6-0830-5fa4-87d1-60568c67040d"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "e91b66bd-423a-5eda-98ed-290a3b48d3b3",
+    "properties": {
+      "name": [
+        "Esmail Khatib"
+      ],
+      "firstName": [
+        "Esmail"
+      ],
+      "lastName": [
+        "Khatib"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Seyed Esmaeil Khatib"
+      ],
+      "position": [
+        "Minister of Intelligence & Security"
+      ],
+      "title": [
+        "Hojjat ol-Eslam"
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1960"
+      ],
+      "nationality": [
+        "ir"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Iran"
+      ],
+      "notes": [
+        "Programs: CYBER2, IFSR, IRAN-HR",
+        "(Linked To: IRANIAN MINISTRY OF INTELLIGENCE AND SECURITY)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/iran/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Iran",
+    "country_code": "ir",
+    "date_updated": "",
+    "ofac_uid": "39017",
+    "merged_from": [
+      "e91b66bd-423a-5eda-98ed-290a3b48d3b3",
+      "898d6682-43bc-5831-b7f3-59a0e20adcd3"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "439764fb-3879-5fdd-a70f-6a138bccd54f",
+    "properties": {
+      "name": [
+        "Eskandar Momeni"
+      ],
+      "firstName": [
+        "Eskandar"
+      ],
+      "lastName": [
+        "Momeni"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Eskandar Momeni"
+      ],
+      "position": [
+        "Minister of Interior"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1963-01-15"
+      ],
+      "nationality": [
+        "ir"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "D10016001"
+      ],
+      "idNumber": [],
+      "address": [
+        "Iran"
+      ],
+      "notes": [
+        "Programs: IRAN-HR"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/iran/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Iran",
+    "country_code": "ir",
+    "date_updated": "",
+    "ofac_uid": "56904",
+    "merged_from": [
+      "439764fb-3879-5fdd-a70f-6a138bccd54f",
+      "b1c188cd-a51b-58f0-b24e-486af77228bc"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "b700b190-27ae-5cb1-941c-0a513750a653",
+    "properties": {
+      "name": [
+        "Yong Gil Ri"
+      ],
+      "firstName": [
+        "Yong Gil"
+      ],
+      "lastName": [
+        "Ri"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Yong Gi Ri",
+        "Yo'Ng-Kil Ri",
+        "Yo'Ng-Kil Yi"
+      ],
+      "position": [
+        "Member, SAC"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1955-01-01"
+      ],
+      "nationality": [
+        "kp"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Korea, North"
+      ],
+      "notes": [
+        "Programs: DPRK2"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "33936",
+    "merged_from": [
+      "b700b190-27ae-5cb1-941c-0a513750a653",
+      "40c9e172-e82a-525e-9db4-ff12994ba0f5"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "0dfb6602-2cb9-593e-9549-4b97c0d28e5c",
+    "properties": {
+      "name": [
+        "Chol Mun"
+      ],
+      "firstName": [
+        "Chol"
+      ],
+      "lastName": [
+        "Mun"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Mun-Ch'O'L Kim"
+      ],
+      "position": [
+        "Member, SPA Standing Committee",
+        "Korea United Development Bank Representative"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1957-03-25"
+      ],
+      "nationality": [
+        "kp"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Dandong, China"
+      ],
+      "notes": [
+        "Programs: DPRK3",
+        "(Linked To: KOREA UNITED DEVELOPMENT BANK)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "21745",
+    "merged_from": [
+      "0dfb6602-2cb9-593e-9549-4b97c0d28e5c",
+      "3a3dfc35-72b0-569a-82a6-51179e0d7e1e"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "90b1bfe1-3891-5856-9781-3d8fbca3cbbf",
+    "properties": {
+      "name": [
+        "Hun Pak"
+      ],
+      "firstName": [
+        "Hun"
+      ],
+      "lastName": [
+        "Pak"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Kwang-Hun Pak",
+        "Gwang Hun Pak",
+        "Gwang Hun Bak"
+      ],
+      "position": [
+        "Vice Premier, Cabinet",
+        "Representative Of Korea Ryonbong General Corporation In Vladivostok, Russia"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1970-01-01"
+      ],
+      "nationality": [
+        "kp"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Vladivostok, Russia"
+      ],
+      "notes": [
+        "Programs: DPRK2"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "23516",
+    "merged_from": [
+      "90b1bfe1-3891-5856-9781-3d8fbca3cbbf",
+      "d6f7853b-e6f6-5a32-8df3-92938e5c158b"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "0d1d2866-386b-5a8c-8de9-b534f9364050",
+    "properties": {
+      "name": [
+        "Kum Chol Kim"
+      ],
+      "firstName": [
+        "Kum Chol"
+      ],
+      "lastName": [
+        "Kim"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Kim, Geum Chol",
+        "Kim, Kum-Chol"
+      ],
+      "position": [
+        "Secretary General, Cabinet Secretariat",
+        "President Of Pyongyang University Of Automation"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1961"
+      ],
+      "nationality": [
+        "kp"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Korea, North"
+      ],
+      "notes": [
+        "Programs: DPRK2"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "52115",
+    "merged_from": [
+      "0d1d2866-386b-5a8c-8de9-b534f9364050",
+      "bdf7db8d-caa4-59b3-a63f-3baaecc9bba3"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "aa56f7cd-8124-55bc-8dcd-de6ced13604a",
+    "properties": {
+      "name": [
+        "Mohamed Ameen"
+      ],
+      "firstName": [
+        "Mohamed"
+      ],
+      "lastName": [
+        "Ameen"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Amyne Didi"
+      ],
+      "position": [
+        "Minister of Transport and Civil Aviation"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1984-05-22"
+      ],
+      "nationality": [
+        "mv"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [
+        "A114103"
+      ],
+      "address": [
+        "Maldives"
+      ],
+      "notes": [
+        "Programs: SDGT",
+        "(Linked To: ISIL KHORASAN)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/maldives/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Maldives",
+    "country_code": "mv",
+    "date_updated": "",
+    "ofac_uid": "27127",
+    "merged_from": [
+      "aa56f7cd-8124-55bc-8dcd-de6ced13604a",
+      "48e724dd-d5ab-585b-b85d-1076ac67409c"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "e0f2e88f-fdb6-56ee-9e79-13bf5c088add",
+    "properties": {
+      "name": [
+        "Rosa Adelina Barahona Castro"
+      ],
+      "firstName": [
+        "Rosa Adelina"
+      ],
+      "lastName": [
+        "Barahona Castro"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Rosa Adelina Barahona De Rivas"
+      ],
+      "position": [
+        "Minister of Defense"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1957-05-10"
+      ],
+      "nationality": [
+        "ni"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [
+        "4901005570000R"
+      ],
+      "address": [
+        "Matagalpa, Nicaragua"
+      ],
+      "notes": [
+        "Programs: NICARAGUA"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/nicaragua/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Nicaragua",
+    "country_code": "ni",
+    "date_updated": "",
+    "ofac_uid": "34111",
+    "merged_from": [
+      "e0f2e88f-fdb6-56ee-9e79-13bf5c088add",
+      "3e141a0e-c791-5a82-babd-0e3ed0e4ced1"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "e1bb062a-2ff9-5190-95f5-a70f2c065cb4",
+    "properties": {
+      "name": [
+        "Salvador Mansell"
+      ],
+      "firstName": [
+        "Salvador"
+      ],
+      "lastName": [
+        "Mansell"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Energy & Mines"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1955-12-13"
+      ],
+      "nationality": [
+        "ni"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "A00000656D"
+      ],
+      "idNumber": [
+        "4411312550001D"
+      ],
+      "address": [
+        "Managua, Nicaragua"
+      ],
+      "notes": [
+        "Programs: NICARAGUA"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/nicaragua/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Nicaragua",
+    "country_code": "ni",
+    "date_updated": "",
+    "ofac_uid": "33853",
+    "merged_from": [
+      "e1bb062a-2ff9-5190-95f5-a70f2c065cb4",
+      "1a8eb971-affd-5095-8afb-d544c310fde0"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "268c6fac-f268-5391-9b06-7ccc87cd1e54",
+    "properties": {
+      "name": [
+        "Oscar Mojica Obregon"
+      ],
+      "firstName": [
+        "Oscar"
+      ],
+      "lastName": [
+        "Mojica Obregon"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Oscar Mojica Obregon"
+      ],
+      "position": [
+        "Minister of Transportation & Infrastructure"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1955-11-22"
+      ],
+      "nationality": [
+        "ni"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "A0006041"
+      ],
+      "idNumber": [],
+      "address": [],
+      "notes": [
+        "Programs: NICARAGUA"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/nicaragua/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Nicaragua",
+    "country_code": "ni",
+    "date_updated": "",
+    "ofac_uid": "26924",
+    "merged_from": [
+      "268c6fac-f268-5391-9b06-7ccc87cd1e54",
+      "041a9a88-c449-5484-b7ec-37e6ac07a62a"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "14820d55-8872-54e8-8f76-e8a831a2e2d9",
+    "properties": {
+      "name": [
+        "Wendy Morales Urbina"
+      ],
+      "firstName": [
+        "Wendy"
+      ],
+      "lastName": [
+        "Morales Urbina"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Wendy Carolina Morales",
+        "Urbina, Wendy Carolina",
+        "Morales, Wendy"
+      ],
+      "position": [
+        "Attorney General"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1980-05-28"
+      ],
+      "nationality": [
+        "ni"
+      ],
+      "citizenship": [
+        "ni"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "001-280580-0021Y"
+      ],
+      "address": [
+        "Managua, Nicaragua"
+      ],
+      "notes": [
+        "Programs: NICARAGUA"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/nicaragua/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Nicaragua",
+    "country_code": "ni",
+    "date_updated": "",
+    "ofac_uid": "47506",
+    "merged_from": [
+      "14820d55-8872-54e8-8f76-e8a831a2e2d9",
+      "3488d52e-184d-5f7b-80b6-2a2c4b75f028"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "a7414c3b-d668-5476-956f-f03b45da86ad",
+    "properties": {
+      "name": [
+        "Leonardo Ovidio Reyes Ramirez"
+      ],
+      "firstName": [
+        "Leonardo Ovidio"
+      ],
+      "lastName": [
+        "Reyes Ramirez"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "President, Central Bank"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1965-04-03"
+      ],
+      "nationality": [
+        "ni"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "A00000794"
+      ],
+      "idNumber": [
+        "0810304650001P"
+      ],
+      "address": [
+        "Managua, Nicaragua"
+      ],
+      "notes": [
+        "Programs: NICARAGUA"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/nicaragua/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Nicaragua",
+    "country_code": "ni",
+    "date_updated": "",
+    "ofac_uid": "31531",
+    "merged_from": [
+      "a7414c3b-d668-5476-956f-f03b45da86ad",
+      "8762da47-803a-51e5-a2c1-6b6dbc6bbcd6"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "006ad23e-54a7-54a1-8822-9ce4af2635fc",
+    "properties": {
+      "name": [
+        "Mikhail Vladimirovich Mishustin"
+      ],
+      "firstName": [
+        "Mikhail Vladimirovich"
+      ],
+      "lastName": [
+        "Mishustin"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Mikhail Mishustin"
+      ],
+      "position": [
+        "Premier"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1966-03-03"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Moscow, Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "35282",
+    "merged_from": [
+      "006ad23e-54a7-54a1-8822-9ce4af2635fc",
+      "ccaf6b49-9281-5587-af2c-005ad0adc2c5"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "19ff653a-9fd8-5e8e-9100-5ac9c86d729d",
+    "properties": {
+      "name": [
+        "Denis Valentinovich Manturov"
+      ],
+      "firstName": [
+        "Denis Valentinovich"
+      ],
+      "lastName": [
+        "Manturov"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Denys Valentynovych Manturov"
+      ],
+      "position": [
+        "First Deputy Premier"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1969-02-23"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [
+        "ru"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "770300358016"
+      ],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "40556",
+    "merged_from": [
+      "19ff653a-9fd8-5e8e-9100-5ac9c86d729d",
+      "6b275edd-e429-5f28-9c99-c3211b6641ed"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "42defa76-8f86-50dd-aa3e-996fc951a68e",
+    "properties": {
+      "name": [
+        "Tatyana Alekseyevna Golikova"
+      ],
+      "firstName": [
+        "Tatyana Alekseyevna"
+      ],
+      "lastName": [
+        "Golikova"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Tatyana Alekseevna Golikova",
+        "Tatiyana Alekseyevna Golikova"
+      ],
+      "position": [
+        "Deputy Premier"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1966-02-09"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [
+        "ru"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "773101409430"
+      ],
+      "address": [
+        "Moscow, Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "41005",
+    "merged_from": [
+      "42defa76-8f86-50dd-aa3e-996fc951a68e",
+      "42f58d87-1016-59ae-b157-d0cec815bd2a"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "e88ec916-09a6-5abb-b9eb-c436c3385409",
+    "properties": {
+      "name": [
+        "Marat Shakirzyanovich Khusnullin"
+      ],
+      "firstName": [
+        "Marat Shakirzyanovich"
+      ],
+      "lastName": [
+        "Khusnullin"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Deputy Premier"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1966-08-09"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [
+        "165500496700"
+      ],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "42073",
+    "merged_from": [
+      "e88ec916-09a6-5abb-b9eb-c436c3385409",
+      "5ca9c293-7375-5c63-9e9a-5200c0d7acb2"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "a7f6b2f9-1666-5d11-966d-b03d88a6038c",
+    "properties": {
+      "name": [
+        "Dmitriy Nikolayevich Chernyshenko"
+      ],
+      "firstName": [
+        "Dmitriy Nikolayevich"
+      ],
+      "lastName": [
+        "Chernyshenko"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Dmitrii Nikolayevich Chernyshenko",
+        "Dmitry Nikolaevich Chernyshenko",
+        "Dmitriy Nikolayevich Chernyshenko"
+      ],
+      "position": [
+        "Deputy Premier"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1968-09-20"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [
+        "770300851430"
+      ],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "39363",
+    "merged_from": [
+      "a7f6b2f9-1666-5d11-966d-b03d88a6038c",
+      "40043aef-09c4-5627-b200-4043d9116191"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "e596913c-6bee-572c-9253-b056bad653ec",
+    "properties": {
+      "name": [
+        "Yuriy Petrovich Trutnev"
+      ],
+      "firstName": [
+        "Yuriy Petrovich"
+      ],
+      "lastName": [
+        "Trutnev"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Yury Trutnev"
+      ],
+      "position": [
+        "Deputy Premier"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1956-03-01"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "35221",
+    "merged_from": [
+      "e596913c-6bee-572c-9253-b056bad653ec",
+      "05b6020e-de54-519e-a17b-bd619174085a"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "b45b6c16-05c3-5345-95eb-c1c6135f61b2",
+    "properties": {
+      "name": [
+        "Aleksandr Valentinovich Novak"
+      ],
+      "firstName": [
+        "Aleksandr Valentinovich"
+      ],
+      "lastName": [
+        "Novak"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Alexander Valentinovich Novak"
+      ],
+      "position": [
+        "Deputy Premier"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1971-08-23"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "38642",
+    "merged_from": [
+      "b45b6c16-05c3-5345-95eb-c1c6135f61b2",
+      "cad6a2a0-e6f0-5a52-b5c5-4660dc15d508"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "7577e6ac-6813-5c14-a64b-543cff310d82",
+    "properties": {
+      "name": [
+        "Aleksandr Vyacheslavovich Kurenkov"
+      ],
+      "firstName": [
+        "Aleksandr Vyacheslavovich"
+      ],
+      "lastName": [
+        "Kurenkov"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Alexander Vyacheslavovich Kurenkov"
+      ],
+      "position": [
+        "Minister of Civil Defense, Emergencies, & Natural Disasters"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1972-06-02"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [
+        "ru"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "502723272765"
+      ],
+      "address": [
+        "Moscow, Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "41040",
+    "merged_from": [
+      "7577e6ac-6813-5c14-a64b-543cff310d82",
+      "9e4709db-f150-56f6-809e-1bce23cf8674"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "dcec7de1-abdf-59fb-b307-d4eefda190be",
+    "properties": {
+      "name": [
+        "Olga Borisovna Lyubimova"
+      ],
+      "firstName": [
+        "Olga Borisovna"
+      ],
+      "lastName": [
+        "Lyubimova"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Culture"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1980-12-31"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [
+        "ru"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "770406735144"
+      ],
+      "address": [
+        "Moscow, Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "41028",
+    "merged_from": [
+      "dcec7de1-abdf-59fb-b307-d4eefda190be",
+      "0e064bb3-a50f-5bae-af67-57357b865538"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "a1ba40bc-1093-5b3a-8915-c71338aae763",
+    "properties": {
+      "name": [
+        "Andrey Removich Belousov"
+      ],
+      "firstName": [
+        "Andrey Removich"
+      ],
+      "lastName": [
+        "Belousov"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Andrei Removich Belousov",
+        "Andriy Removych Bielousov",
+        "Andrii Removych Byelousov"
+      ],
+      "position": [
+        "Minister of Defense"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1959-03-17"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "39361",
+    "merged_from": [
+      "a1ba40bc-1093-5b3a-8915-c71338aae763",
+      "9d3ea8b8-40c8-5832-b9a0-9f37fa1f151c"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "baf13575-cd11-5c0c-ae96-f537015d05c2",
+    "properties": {
+      "name": [
+        "Aleksey Olegovich Chekunkov"
+      ],
+      "firstName": [
+        "Aleksey Olegovich"
+      ],
+      "lastName": [
+        "Chekunkov"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Aleksei Olegovich Chekunkov"
+      ],
+      "position": [
+        "Minister of Development of the Far East and the Arctic"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1980-10-03"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [
+        "ru"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "773012831665"
+      ],
+      "address": [
+        "Moscow, Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "41033",
+    "merged_from": [
+      "baf13575-cd11-5c0c-ae96-f537015d05c2",
+      "ab94fba2-cb4d-592a-b94a-f3bae7188131"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "5ae8202c-5c03-5346-971f-d088c5aae8ef",
+    "properties": {
+      "name": [
+        "Maksut Igorevich Shadayev"
+      ],
+      "firstName": [
+        "Maksut Igorevich"
+      ],
+      "lastName": [
+        "Shadayev"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Digital Development, Communications, & Mass Media"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1979-11-11"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [
+        "ru"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "771121110109"
+      ],
+      "address": [
+        "Moscow, Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "41036",
+    "merged_from": [
+      "5ae8202c-5c03-5346-971f-d088c5aae8ef",
+      "e7a1f037-c48f-5181-942a-45d5210ccd4f"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "df456803-12e3-51a9-be87-159ecd3813eb",
+    "properties": {
+      "name": [
+        "Anton Germanovich Siluanov"
+      ],
+      "firstName": [
+        "Anton Germanovich"
+      ],
+      "lastName": [
+        "Siluanov"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Finance"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1963-04-12"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "35243",
+    "merged_from": [
+      "df456803-12e3-51a9-be87-159ecd3813eb",
+      "0172217b-6313-5cad-9df7-3fee5525e210"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "5e7ae156-a13d-5428-a59e-f95c95f775d2",
+    "properties": {
+      "name": [
+        "Anton Andreyevich Alikhanov"
+      ],
+      "firstName": [
+        "Anton Andreyevich"
+      ],
+      "lastName": [
+        "Alikhanov"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Anton Andreevich Alikhanov"
+      ],
+      "position": [
+        "Minister of Industry & Trade"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1986-09-17"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [
+        "ru"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "770501690172"
+      ],
+      "address": [
+        "Kaliningrad, Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "40264",
+    "merged_from": [
+      "5e7ae156-a13d-5428-a59e-f95c95f775d2",
+      "5eac0254-436b-547c-bfea-d19ba3003535"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "ed18924e-5c9b-5e5b-803d-27f2be535e3b",
+    "properties": {
+      "name": [
+        "Anton Olegovich Kotyakov"
+      ],
+      "firstName": [
+        "Anton Olegovich"
+      ],
+      "lastName": [
+        "Kotyakov"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Labor & Social Protection"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1980-08-15"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [
+        "ru"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "631903462483"
+      ],
+      "address": [
+        "Moscow, Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "41018",
+    "merged_from": [
+      "ed18924e-5c9b-5e5b-803d-27f2be535e3b",
+      "ef39e7fb-9b64-587e-b13f-7ab97c902d4e"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "cd6c171d-c9ca-554f-891b-755908ea691e",
+    "properties": {
+      "name": [
+        "Aleksandr Aleksandrovich Kozlov"
+      ],
+      "firstName": [
+        "Aleksandr Aleksandrovich"
+      ],
+      "lastName": [
+        "Kozlov"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Alexander Alexandrovich Kozlov"
+      ],
+      "position": [
+        "Minister of Natural Resources & Ecology"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1981-01-02"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [
+        "ru"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "280602036120"
+      ],
+      "address": [
+        "Moscow, Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "41029",
+    "merged_from": [
+      "cd6c171d-c9ca-554f-891b-755908ea691e",
+      "12993ca2-31ca-5a99-b0ed-d4af2bdddcc7"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "fbee7b65-a0d0-5c1f-b1ab-b1bba5553a9b",
+    "properties": {
+      "name": [
+        "Valeriy Nikolayevich Falkov"
+      ],
+      "firstName": [
+        "Valeriy Nikolayevich"
+      ],
+      "lastName": [
+        "Falkov"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Science & Higher Education"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1978-10-18"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [
+        "ru"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "721801437195"
+      ],
+      "address": [
+        "Moscow, Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "41022",
+    "merged_from": [
+      "fbee7b65-a0d0-5c1f-b1ab-b1bba5553a9b",
+      "f65fb88c-0393-5536-af04-a4a5cba3e4e0"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "d6e33049-9c30-57e4-8fa8-e9317955ad2e",
+    "properties": {
+      "name": [
+        "Mikhail Vladimirovich Degtyarev"
+      ],
+      "firstName": [
+        "Mikhail Vladimirovich"
+      ],
+      "lastName": [
+        "Degtyarev"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Mikhail Vladimirovich Degtyaryov"
+      ],
+      "position": [
+        "Minister of Sport"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1981-07-10"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [
+        "ru"
+      ],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Khabarovsk Region, Russia",
+        "Sevastopol, Crimea, Ukraine"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "41044",
+    "merged_from": [
+      "d6e33049-9c30-57e4-8fa8-e9317955ad2e",
+      "61017f97-ff10-50ab-bd07-68bb3bb78df7"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "dbe82bd4-dc46-57b0-b0e4-d46ff1522618",
+    "properties": {
+      "name": [
+        "Roman Vladimirovich Starovoyt"
+      ],
+      "firstName": [
+        "Roman Vladimirovich"
+      ],
+      "lastName": [
+        "Starovoyt"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Roman Vladimirovich Starovoit"
+      ],
+      "position": [
+        "Minister of Transportation"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1972-01-20"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [
+        "782613427204"
+      ],
+      "address": [
+        "Kursk, Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "40247",
+    "merged_from": [
+      "dbe82bd4-dc46-57b0-b0e4-d46ff1522618",
+      "642ef1b3-60d2-50a2-8857-4bfb5551847a"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "cc74e525-c18d-5f6c-8a8b-ea66a557c6bc",
+    "properties": {
+      "name": [
+        "Sergey Yevgenyevich Naryshkin"
+      ],
+      "firstName": [
+        "Sergey Yevgenyevich"
+      ],
+      "lastName": [
+        "Naryshkin"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Sergei Naryshkin"
+      ],
+      "position": [
+        "Director, Foreign Intelligence Service (SVR)"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1954-10-27"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Moscow, Russia"
+      ],
+      "notes": [
+        "Programs: UKRAINE-EO13661, RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "16691",
+    "merged_from": [
+      "cc74e525-c18d-5f6c-8a8b-ea66a557c6bc",
+      "0a81da37-a95c-5597-abc7-32b34d6c5eb1"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "ae0688ac-473c-5dd1-9ef0-30bcdc52c48b",
+    "properties": {
+      "name": [
+        "Sergey Kuzhugetovich Shoygu"
+      ],
+      "firstName": [
+        "Sergey Kuzhugetovich"
+      ],
+      "lastName": [
+        "Shoygu"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Sergey Shoigu",
+        "Sergey Kuzhugetovich Shoygu"
+      ],
+      "position": [
+        "Secretary, Security Council"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1955-05-21"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "35173",
+    "merged_from": [
+      "ae0688ac-473c-5dd1-9ef0-30bcdc52c48b",
+      "d52388c2-d539-5997-8f04-bd7eb3a0a6be"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "85da5294-bb31-5f57-9cb1-bc4d767cffe5",
+    "properties": {
+      "name": [
+        "Igor Viktorovich Krasnov"
+      ],
+      "firstName": [
+        "Igor Viktorovich"
+      ],
+      "lastName": [
+        "Krasnov"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Igor Krasnov",
+        "Igor Viktorovich Krasnov"
+      ],
+      "position": [
+        "Procurator General"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1975-12-24"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Moscow, Russia"
+      ],
+      "notes": [
+        "Programs: UKRAINE-EO13661, RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "31251",
+    "merged_from": [
+      "85da5294-bb31-5f57-9cb1-bc4d767cffe5",
+      "8fc29b19-eea0-5709-8e09-6abc99614982"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "5a40938c-c4cf-5c03-9c07-57752fe5b7b4",
+    "properties": {
+      "name": [
+        "Nenad Popovic"
+      ],
+      "firstName": [
+        "Nenad"
+      ],
+      "lastName": [
+        "Popovic"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister Without Portfolio"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1966-09-30"
+      ],
+      "nationality": [
+        "rs"
+      ],
+      "citizenship": [
+        "rs"
+      ],
+      "passportNumber": [
+        "050010216"
+      ],
+      "idNumber": [
+        "773389222811"
+      ],
+      "address": [
+        "Serbia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/serbia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Serbia",
+    "country_code": "rs",
+    "date_updated": "",
+    "ofac_uid": "45250",
+    "merged_from": [
+      "5a40938c-c4cf-5c03-9c07-57752fe5b7b4",
+      "8d63a8fa-433f-52b5-8ddd-c52e235ef793"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "aa6b103e-39e7-59b0-9f95-7e0a0b2ee9ab",
+    "properties": {
+      "name": [
+        "Taban Deng Gai"
+      ],
+      "firstName": [
+        "Taban Deng"
+      ],
+      "lastName": [
+        "Gai"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Vice President (3rd)"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1953-01-01"
+      ],
+      "nationality": [
+        "ss"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Juba, South Sudan"
+      ],
+      "notes": [
+        "Programs: GLOMAG"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/south-sudan/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "South Sudan",
+    "country_code": "ss",
+    "date_updated": "",
+    "ofac_uid": "28208",
+    "merged_from": [
+      "aa6b103e-39e7-59b0-9f95-7e0a0b2ee9ab",
+      "ac0ba7ec-63f2-5af5-82bf-de0a04e2c038"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "be95870c-a530-5d64-82da-7bcc1f3e21da",
+    "properties": {
+      "name": [
+        "Mohamed Hamdan Dagalo"
+      ],
+      "firstName": [
+        "Mohamed Hamdan"
+      ],
+      "lastName": [
+        "Dagalo"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "HEMETI",
+        "Mohamed Hamdan Dagalo",
+        "Mohamed Hamdan",
+        "Mohammed Hamdan Dagalo",
+        "Hemedti",
+        "Hemeti"
+      ],
+      "position": [
+        "Deputy Chairman, SC"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1974-01-01"
+      ],
+      "nationality": [
+        "sd"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Sudan"
+      ],
+      "notes": [
+        "Programs: SUDAN-EO14098"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/sudan/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Sudan",
+    "country_code": "sd",
+    "date_updated": "",
+    "ofac_uid": "52510",
+    "merged_from": [
+      "be95870c-a530-5d64-82da-7bcc1f3e21da",
+      "d54ea9cf-dbec-57b4-b052-99b2aa16dcc0"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "c21ee2bb-15e1-5737-9464-7bb637ba50de",
+    "properties": {
+      "name": [
+        "Jibril Ibrahim"
+      ],
+      "firstName": [
+        "Jibril"
+      ],
+      "lastName": [
+        "Ibrahim"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Gibril Ibrahim Mohamed",
+        "Jibril Ibrahim"
+      ],
+      "position": [
+        "Minister of Finance & Economic Planning"
+      ],
+      "title": [
+        "Dr."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1955-05-10"
+      ],
+      "nationality": [
+        "sd"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "D00001664"
+      ],
+      "idNumber": [],
+      "address": [
+        "Port Sudan, Sudan"
+      ],
+      "notes": [
+        "Programs: SUDAN-EO14098"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/sudan/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Sudan",
+    "country_code": "sd",
+    "date_updated": "",
+    "ofac_uid": "55422",
+    "merged_from": [
+      "c21ee2bb-15e1-5737-9464-7bb637ba50de",
+      "e5341fb2-36ca-5ce6-9281-efcd2d8f9910"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "803c68f4-eac6-5295-9b06-c18d910d8372",
+    "properties": {
+      "name": [
+        "Gustavo Gonzalez Lopez"
+      ],
+      "firstName": [
+        "Gustavo"
+      ],
+      "lastName": [
+        "Gonzalez Lopez"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Defense",
+        "Director General Of Venezuela'S Bolivarian National Intelligence Service (Sebin); Major General, President Of Venezuela'S Strategic Center Of Security And Protection Of The Homeland (Cesppa)"
+      ],
+      "title": [
+        "Gen."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1960-11-02"
+      ],
+      "nationality": [
+        "ve"
+      ],
+      "citizenship": [
+        "ve"
+      ],
+      "passportNumber": [
+        "B0111931"
+      ],
+      "idNumber": [
+        "5.726.284"
+      ],
+      "address": [],
+      "notes": [
+        "Programs: VENEZUELA"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/venezuela/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Venezuela",
+    "country_code": "ve",
+    "date_updated": "",
+    "ofac_uid": "17810",
+    "merged_from": [
+      "803c68f4-eac6-5295-9b06-c18d910d8372",
+      "5daae022-5e6a-58e4-8568-2a81bbffa047"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "8ff32fca-16f0-5fe7-a001-94a6de60c230",
+    "properties": {
+      "name": [
+        "Ricardo Menendez Prieto"
+      ],
+      "firstName": [
+        "Ricardo"
+      ],
+      "lastName": [
+        "Menendez Prieto"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Planning"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1969-12-07"
+      ],
+      "nationality": [
+        "ve"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [
+        "V10333821"
+      ],
+      "address": [
+        "Caracas, Venezuela"
+      ],
+      "notes": [
+        "Programs: VENEZUELA"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/venezuela/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Venezuela",
+    "country_code": "ve",
+    "date_updated": "",
+    "ofac_uid": "51270",
+    "merged_from": [
+      "8ff32fca-16f0-5fe7-a001-94a6de60c230",
+      "7dab843d-4fbe-5a3a-84c0-c2d3b44d7477"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "74c5a8b5-73c1-51e5-879f-45797a60e50b",
+    "properties": {
+      "name": [
+        "Vladimir Padrino Lopez"
+      ],
+      "firstName": [
+        "Vladimir"
+      ],
+      "lastName": [
+        "Padrino Lopez"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Productive Agriculture & Lands"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1963-05-30"
+      ],
+      "nationality": [
+        "ve"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [
+        "6122963"
+      ],
+      "address": [
+        "Capital District, Venezuela"
+      ],
+      "notes": [
+        "Programs: VENEZUELA"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/venezuela/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Venezuela",
+    "country_code": "ve",
+    "date_updated": "",
+    "ofac_uid": "25080",
+    "merged_from": [
+      "74c5a8b5-73c1-51e5-879f-45797a60e50b",
+      "b01d289b-7a09-5a14-84ef-26064268e81b"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "f2e02018-97fc-5ed8-8cb3-ae77b8ded28e",
+    "properties": {
+      "name": [
+        "Daniella Cabello Contreras"
+      ],
+      "firstName": [
+        "Daniella"
+      ],
+      "lastName": [
+        "Cabello Contreras"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Tourism"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1996-04-11"
+      ],
+      "nationality": [
+        "ve"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [
+        "V23434318"
+      ],
+      "address": [
+        "Venezuela"
+      ],
+      "notes": [
+        "Programs: VENEZUELA"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/venezuela/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Venezuela",
+    "country_code": "ve",
+    "date_updated": "",
+    "ofac_uid": "51269",
+    "merged_from": [
+      "f2e02018-97fc-5ed8-8cb3-ae77b8ded28e",
+      "fe223057-8866-5d1a-b1aa-dcfc93db0b4e"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "232fd0c4-a3d4-5fa6-9946-5e73644c54cf",
+    "properties": {
+      "name": [
+        "Constantino Chiwenga"
+      ],
+      "firstName": [
+        "Constantino"
+      ],
+      "lastName": [
+        "Chiwenga"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Constantino Chiwenga",
+        "Constantine Gureya Chiwenga",
+        "Constantino D.N.G. Chiwenga"
+      ],
+      "position": [
+        "Vice President"
+      ],
+      "title": [
+        "Gen. (Ret.)"
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1956-08-25"
+      ],
+      "nationality": [
+        "zw"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Zimbabwe"
+      ],
+      "notes": [
+        "Programs: GLOMAG"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/zimbabwe/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Zimbabwe",
+    "country_code": "zw",
+    "date_updated": "",
+    "ofac_uid": "7489",
+    "merged_from": [
+      "232fd0c4-a3d4-5fa6-9946-5e73644c54cf",
+      "e9acd7da-0849-5e56-a024-e2c389bda2da"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "f6fc2069-2869-5228-bae4-9e65d297ee4d",
+    "properties": {
+      "name": [
+        "Dmitriy Yuriyevich Grigorenko"
+      ],
+      "firstName": [
+        "Dmitriy Yuriyevich"
+      ],
+      "lastName": [
+        "Grigorenko"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Deputy Premier"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1978-07-14"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "35847",
+    "merged_from": [
+      "f6fc2069-2869-5228-bae4-9e65d297ee4d",
+      "58824435-8c8e-5c08-bf22-343a10e865a8"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "f11ad005-002c-53ae-9cda-c70654fa1f7d",
+    "properties": {
+      "name": [
+        "Vitaliy Gennadyevich Savelyev"
+      ],
+      "firstName": [
+        "Vitaliy Gennadyevich"
+      ],
+      "lastName": [
+        "Savelyev"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Vitaly Gennadyevich Saveliev"
+      ],
+      "position": [
+        "Deputy Premier"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1954-01-18"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "36501",
+    "merged_from": [
+      "f11ad005-002c-53ae-9cda-c70654fa1f7d",
+      "6ab2c489-99a1-57c0-bdba-e308e53d660e"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "29a39d94-a45e-5891-a61a-73c87f60aa6c",
+    "properties": {
+      "name": [
+        "Konstantin Anatolyevich Chuychekno"
+      ],
+      "firstName": [
+        "Konstantin Anatolyevich"
+      ],
+      "lastName": [
+        "Chuychekno"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Konstantin Anatolyevich Chuichenko"
+      ],
+      "position": [
+        "Minister of Justice"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1965-07-12"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "35240",
+    "merged_from": [
+      "29a39d94-a45e-5891-a61a-73c87f60aa6c",
+      "55e23a00-c425-5ddd-8160-7592083ecc39"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "7ca666d5-ef17-58e0-921f-386760dae330",
+    "properties": {
+      "name": [
+        "Maman Abdurrahman"
+      ],
+      "firstName": [
+        "Maman"
+      ],
+      "lastName": [
+        "Abdurrahman"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Oman Rahman",
+        "Abu Sulaiman Aman Abdurrahman Al-Arkhabiliy",
+        "Aman Abdul Rahman",
+        "Aman Abdurahman",
+        "Aman Abdurrachman",
+        "Oman Abdulrohman",
+        "Oman Abdurrahman",
+        "Aman Abdurrahman"
+      ],
+      "position": [
+        "Minister of Micro, Small, & Medium Enterprises",
+        "Ustadz"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1972-01-05"
+      ],
+      "nationality": [
+        "id"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Nusa Kambangan Island, Indonesia"
+      ],
+      "notes": [
+        "Programs: SDGT",
+        "(Linked To: ISLAMIC STATE OF IRAQ AND THE LEVANT)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/indonesia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Indonesia",
+    "country_code": "id",
+    "date_updated": "",
+    "ofac_uid": "21388",
+    "merged_from": [
+      "7ca666d5-ef17-58e0-921f-386760dae330",
+      "3648e06a-d91c-5942-af00-ad4c1b49b8b0"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "0a20c63b-a3e5-5b97-9a17-2fa6525d1530",
+    "properties": {
+      "name": [
+        "Aleksandr Vasilyevich Bortnikov"
+      ],
+      "firstName": [
+        "Aleksandr Vasilyevich"
+      ],
+      "lastName": [
+        "Bortnikov"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Aleksandr Vasilievich Rakitin"
+      ],
+      "position": [
+        "Director, Federal Security Service (FSB)",
+        "Member Of The Federation Council Of The Federal Assembly Of The Russian Federation"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1958-05-17"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "36852",
+    "merged_from": [
+      "0a20c63b-a3e5-5b97-9a17-2fa6525d1530",
+      "e33c79c3-7c0c-587f-8156-e3bdba2f2a2e"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "b34bfe19-0003-548f-8bb3-afa10a3f7a47",
+    "properties": {
+      "name": [
+        "Irek Envarovich Fayzullin"
+      ],
+      "firstName": [
+        "Irek Envarovich"
+      ],
+      "lastName": [
+        "Fayzullin"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Construction, Housing, & Public Utilities"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1962-12-08"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "35846",
+    "merged_from": [
+      "b34bfe19-0003-548f-8bb3-afa10a3f7a47",
+      "cbd5574b-be95-5c3d-985a-09ecf5aa0b45"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "f21fad05-0e28-5492-a4e5-4ca30560fe5c",
+    "properties": {
+      "name": [
+        "Vladimir Aleksandrovich Kolokoltsev"
+      ],
+      "firstName": [
+        "Vladimir Aleksandrovich"
+      ],
+      "lastName": [
+        "Kolokoltsev"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Internal Affairs"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1961-05-11"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Moscow, Russia"
+      ],
+      "notes": [
+        "Programs: UKRAINE-EO13661, RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "24319",
+    "merged_from": [
+      "f21fad05-0e28-5492-a4e5-4ca30560fe5c",
+      "4ec04ba4-e0f9-5e74-8dde-50b4f93866e8"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "1e68a075-f6b8-5fef-9e9c-20ba346d9a35",
+    "properties": {
+      "name": [
+        "Maung Myint"
+      ],
+      "firstName": [
+        "Maung"
+      ],
+      "lastName": [
+        "Myint"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Aung Myint",
+        "Aung Mo Myint"
+      ],
+      "position": [
+        "Minister of Hotels, Tourism, & Culture"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1971-06-09",
+        "1969-09-28"
+      ],
+      "nationality": [
+        "zm"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [
+        "12/YAKANA(N)006981"
+      ],
+      "address": [
+        "South Okkalapa Township, Yangon Region, Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "39216",
+    "merged_from": [
+      "1e68a075-f6b8-5fef-9e9c-20ba346d9a35",
+      "57ce63d0-674a-59b4-b953-b5fd5ef70c7f"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "cbc77aa2-a2ff-59f0-b3ba-597e679e7517",
+    "properties": {
+      "name": [
+        "Maksim Gennadyevich Reshetnikov"
+      ],
+      "firstName": [
+        "Maksim Gennadyevich"
+      ],
+      "lastName": [
+        "Reshetnikov"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Economic Development"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1979-07-11"
+      ],
+      "nationality": [
+        "ru"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Russia"
+      ],
+      "notes": [
+        "Programs: RUSSIA-EO14024"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/russia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Russia",
+    "country_code": "ru",
+    "date_updated": "",
+    "ofac_uid": "36500",
+    "merged_from": [
+      "cbc77aa2-a2ff-59f0-b3ba-597e679e7517",
+      "16b5609a-dca7-5bde-905a-db16dcaf2f23"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "94dbc0a4-7f7e-5515-9d8a-f71a694a2256",
+    "properties": {
+      "name": [
+        "Maung Thin"
+      ],
+      "firstName": [
+        "Maung"
+      ],
+      "lastName": [
+        "Thin"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Khin Mg Yi",
+        "Khin Maung Yee",
+        "Khin Mg Yee",
+        "U Khin Maung Yee",
+        "U Khin Maung Yi"
+      ],
+      "position": [
+        "Minister of Youth Affairs",
+        "Minister For Natural Resources And Environmental Conservation"
+      ],
+      "title": [
+        "Dr."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1965-02-15"
+      ],
+      "nationality": [
+        "zm"
+      ],
+      "citizenship": [
+        "zm"
+      ],
+      "passportNumber": [
+        "DM000956"
+      ],
+      "idNumber": [
+        "14HATHATAN059290",
+        "13MAYATANAING002216"
+      ],
+      "address": [
+        "Naypyitaw, Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "31924",
+    "merged_from": [
+      "94dbc0a4-7f7e-5515-9d8a-f71a694a2256",
+      "ea94ea94-8ff4-50f5-9f95-b89370a17a71"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "a02de48a-caf5-5505-ba51-5a38d2e02d9f",
+    "properties": {
+      "name": [
+        "Sok Chol Jo"
+      ],
+      "firstName": [
+        "Sok Chol"
+      ],
+      "lastName": [
+        "Jo"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Yong Chol Cho"
+      ],
+      "position": [
+        "Chairman, State Commission of Quality Management",
+        "North Korea'S Ministry Of State Security Official"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1973-09-30"
+      ],
+      "nationality": [
+        "kp"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Syria"
+      ],
+      "notes": [
+        "Programs: DPRK2"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "19610",
+    "merged_from": [
+      "a02de48a-caf5-5505-ba51-5a38d2e02d9f",
+      "f94cc52e-7c0e-5ab7-9116-8acb8d38b55e"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "c3bbe851-9ce5-554f-ada1-dce8062fef6f",
+    "properties": {
+      "name": [
+        "Muhammad Hassan Dahab"
+      ],
+      "firstName": [
+        "Muhammad Hassan"
+      ],
+      "lastName": [
+        "Dahab"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Ahmad Harun",
+        "Ahmed Mohamed Haroun",
+        "Mawlana Ahmad Muhammad Harun",
+        "Ahmed Mohammed Haroun",
+        "Ahmad Muhammad Harun"
+      ],
+      "position": [
+        "Minister of Higher Education & Scientific Research",
+        "State Minister For Humanitarian Affairs; Former State Minister For The Interior; Former Coordinator Of The Popular Police Forces"
+      ],
+      "title": [
+        "Dr."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1964"
+      ],
+      "nationality": [
+        "sd"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [],
+      "notes": [
+        "Programs: DARFUR"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/sudan/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Sudan",
+    "country_code": "sd",
+    "date_updated": "",
+    "ofac_uid": "10154",
+    "merged_from": [
+      "c3bbe851-9ce5-554f-ada1-dce8062fef6f",
+      "22308161-827c-5c1a-be93-5080efa03b61"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "f7b6307f-2299-53fe-880f-79bd74181680",
+    "properties": {
+      "name": [
+        "Min Naung"
+      ],
+      "firstName": [
+        "Min"
+      ],
+      "lastName": [
+        "Naung"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Htun Htun Naung",
+        "Tun Tun Naing"
+      ],
+      "position": [
+        "Minister of Agriculture, Livestock, & Irrigation",
+        "Union Minister Of Border Affairs"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1963-04-30"
+      ],
+      "nationality": [
+        "zm"
+      ],
+      "citizenship": [
+        "zm"
+      ],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "31775",
+    "merged_from": [
+      "f7b6307f-2299-53fe-880f-79bd74181680",
+      "71e2c383-be37-5093-847b-bcdc810d2990"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "f09fa64f-3749-5bb9-8eae-47aa0e56fc7c",
+    "properties": {
+      "name": [
+        "Mohamad-Reza Farzin"
+      ],
+      "firstName": [
+        "Mohamad-Reza"
+      ],
+      "lastName": [
+        "Farzin"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Governor, Central Bank of Iran",
+        "Law Enforcement Forces Of The Islamic Republic Of Iran Commander For Lorestan Province"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1975-05-22"
+      ],
+      "nationality": [
+        "ir"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "E25607570"
+      ],
+      "idNumber": [],
+      "address": [
+        "Lorestan, Iran",
+        "Tuysarkan, Hamadan, Iran"
+      ],
+      "notes": [
+        "Programs: IRAN-HR",
+        "(Linked To: LAW ENFORCEMENT FORCES OF THE ISLAMIC REPUBLIC OF IRAN)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/iran/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Iran",
+    "country_code": "ir",
+    "date_updated": "",
+    "ofac_uid": "56785",
+    "merged_from": [
+      "f09fa64f-3749-5bb9-8eae-47aa0e56fc7c",
+      "10cb3547-278f-513c-835c-464ee597b34a"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "39fa2df2-bd23-592f-829d-992d069a2c67",
+    "properties": {
+      "name": [
+        "Nyunt Win Swe"
+      ],
+      "firstName": [
+        "Nyunt Win"
+      ],
+      "lastName": [
+        "Swe"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "U Myo Swe Win"
+      ],
+      "position": [
+        "Minister of Home Affairs",
+        "Bago Region Chief Minister"
+      ],
+      "title": [
+        "Lt. Gen."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1961-01-21"
+      ],
+      "nationality": [
+        "zm"
+      ],
+      "citizenship": [
+        "zm"
+      ],
+      "passportNumber": [
+        "DM005096"
+      ],
+      "idNumber": [
+        "7PAKHANAN008087"
+      ],
+      "address": [
+        "Rangoon, Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "33973",
+    "merged_from": [
+      "39fa2df2-bd23-592f-829d-992d069a2c67",
+      "4b492a42-257b-561b-b934-11bd8a89b7b9"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "a94b2e8e-85d9-507b-a1ca-4de6aa6b733e",
+    "properties": {
+      "name": [
+        "Kyong Chol Choe"
+      ],
+      "firstName": [
+        "Kyong Chol"
+      ],
+      "lastName": [
+        "Choe"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Ch'O'L-Ryong Ch'Oe"
+      ],
+      "position": [
+        "Minister of Public Health"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1992-02-12"
+      ],
+      "nationality": [
+        "kp"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "745336612"
+      ],
+      "idNumber": [],
+      "address": [
+        "Dandong, China"
+      ],
+      "notes": [
+        "Programs: NPWMD",
+        "(Linked To: KOREA KWANGSON BANKING CORP)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "48220",
+    "merged_from": [
+      "a94b2e8e-85d9-507b-a1ca-4de6aa6b733e",
+      "7d5925c3-36b7-555b-ab91-d969cc28db32"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "486633c7-d65d-579c-a85e-bd4fb32cc714",
+    "properties": {
+      "name": [
+        "Mohammad Eslami"
+      ],
+      "firstName": [
+        "Mohammad"
+      ],
+      "lastName": [
+        "Eslami"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Mohammad Reza Naghdi",
+        "Mohammad Reza Shams",
+        "Muhammad Naqdi",
+        "Mohammad-Reza Naqdi",
+        "Mohammedreza Naghdi",
+        "Gholamreza Naqdi",
+        "Gholam-Reza Naqdi"
+      ],
+      "position": [
+        "Vice President & Head, Atomic Energy Organization of Iran",
+        "Brigadier General And Commander Of The Irgc Basij Resistance Force; President Of The Organization Of The Basij Of The Oppressed; Chief Of The Mobilization Of The Oppressed Organization"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1951",
+        "1960",
+        "1961-04",
+        "1953"
+      ],
+      "nationality": [
+        "ir"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Iran"
+      ],
+      "notes": [
+        "Programs: NPWMD, IRGC, IRAN-HR, IFSR, SDGT, IRAN-EO13876",
+        "Head of the Basij"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/iran/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Iran",
+    "country_code": "ir",
+    "date_updated": "",
+    "ofac_uid": "12057",
+    "merged_from": [
+      "486633c7-d65d-579c-a85e-bd4fb32cc714",
+      "45fc9a87-c84e-5d7b-919f-5c53ef64b9cb"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "78730f06-8057-59aa-b463-2c2f1d0ed6b5",
+    "properties": {
+      "name": [
+        "Ivan Kubrakow"
+      ],
+      "firstName": [
+        "Ivan"
+      ],
+      "lastName": [
+        "Kubrakow"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Ivan Vladimirovich Kubrakov",
+        "Ivan Kubrakov"
+      ],
+      "position": [
+        "Minister of Internal Affairs"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1975-05-05"
+      ],
+      "nationality": [
+        "by"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Minsk, Belarus"
+      ],
+      "notes": [
+        "Programs: BELARUS"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/belarus/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Belarus",
+    "country_code": "by",
+    "date_updated": "",
+    "ofac_uid": "29663",
+    "merged_from": [
+      "78730f06-8057-59aa-b463-2c2f1d0ed6b5",
+      "bdca9096-9c06-5ef9-ae36-6518cfb022e7"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "257b7973-9bb2-564f-b8c5-1a55c239efc9",
+    "properties": {
+      "name": [
+        "Chung Song Kim"
+      ],
+      "firstName": [
+        "Chung Song"
+      ],
+      "lastName": [
+        "Kim"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "So'Ng-Hun Kim"
+      ],
+      "position": [
+        "Minister of National Natural Resources Development"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1978-04-10"
+      ],
+      "nationality": [
+        "kp"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "745235023"
+      ],
+      "idNumber": [],
+      "address": [
+        "Shenyang, China"
+      ],
+      "notes": [
+        "Programs: NPWMD",
+        "(Linked To: SECOND ACADEMY OF NATURAL SCIENCES)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "27212",
+    "merged_from": [
+      "257b7973-9bb2-564f-b8c5-1a55c239efc9",
+      "86f78ac3-c178-5fef-8754-9e7ec6d5010b"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "47ad2603-a5d2-5b3c-b035-391c6c9fadf7",
+    "properties": {
+      "name": [
+        "Song Jun Kim"
+      ],
+      "firstName": [
+        "Song Jun"
+      ],
+      "lastName": [
+        "Kim"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "So'Ng-Hun Kim"
+      ],
+      "position": [
+        "Minister of Land & Environmental Protection"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1978-04-10"
+      ],
+      "nationality": [
+        "kp"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "745235023"
+      ],
+      "idNumber": [],
+      "address": [
+        "Shenyang, China"
+      ],
+      "notes": [
+        "Programs: NPWMD",
+        "(Linked To: SECOND ACADEMY OF NATURAL SCIENCES)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "27212",
+    "merged_from": [
+      "47ad2603-a5d2-5b3c-b035-391c6c9fadf7",
+      "86f78ac3-c178-5fef-8754-9e7ec6d5010b"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "5f9ee52c-a87d-58ea-896c-92f65a548854",
+    "properties": {
+      "name": [
+        "Chol U Yu"
+      ],
+      "firstName": [
+        "Chol U"
+      ],
+      "lastName": [
+        "Yu"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Director, National Aerospace Development Administration"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1959-08-08"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Korea, North"
+      ],
+      "notes": [
+        "Programs: DPRK2",
+        "(Linked To: NATIONAL AEROSPACE DEVELOPMENT ADMINISTRATION)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "19488",
+    "merged_from": [
+      "5f9ee52c-a87d-58ea-896c-92f65a548854",
+      "bf3c0770-67c1-5ebe-beb7-e1f150d76454"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "9dd1c54f-031f-527d-8547-9eb0587a88e2",
+    "properties": {
+      "name": [
+        "Gerardo Izquierdo Torres"
+      ],
+      "firstName": [
+        "Gerardo"
+      ],
+      "lastName": [
+        "Izquierdo Torres"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Borders",
+        "State Minister For The New Border Of Peace"
+      ],
+      "title": [
+        "Maj. Gen."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1961-03-29"
+      ],
+      "nationality": [],
+      "citizenship": [
+        "ve"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "6030540"
+      ],
+      "address": [
+        "Caracas, Capital District, Venezuela"
+      ],
+      "notes": [
+        "Programs: VENEZUELA"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/venezuela/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Venezuela",
+    "country_code": "ve",
+    "date_updated": "",
+    "ofac_uid": "23347",
+    "merged_from": [
+      "9dd1c54f-031f-527d-8547-9eb0587a88e2",
+      "903e5f1c-eb99-55f4-9e34-351387a5c350"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "9c963486-365d-5453-962d-106a88200583",
+    "properties": {
+      "name": [
+        "Jorge Elieser Marquez"
+      ],
+      "firstName": [
+        "Jorge Elieser"
+      ],
+      "lastName": [
+        "Marquez"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Habitat & Housing",
+        "Venezuela'S Minister Of The Office Of The Presidency"
+      ],
+      "title": [
+        "Maj. Gen."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1971-02-20"
+      ],
+      "nationality": [],
+      "citizenship": [
+        "ve"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "8714253"
+      ],
+      "address": [
+        "Caracas, District Capital, Venezuela"
+      ],
+      "notes": [
+        "Programs: VENEZUELA"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/venezuela/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Venezuela",
+    "country_code": "ve",
+    "date_updated": "",
+    "ofac_uid": "23130",
+    "merged_from": [
+      "9c963486-365d-5453-962d-106a88200583",
+      "5fde63ae-f543-5ec4-982c-b3bfe70d74a9"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "9d2cf264-d4ab-5d45-98ec-1b8379096861",
+    "properties": {
+      "name": [
+        "Mohammad Yaqub"
+      ],
+      "firstName": [
+        "Mohammad"
+      ],
+      "lastName": [
+        "Yaqub"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "James Alexander Mclintok",
+        "Yaqoob Mansoor Al Rashidi",
+        "Yaqub Mansoor Al-Rashidi",
+        "Yaqoob Mansoor Ur Rashidi",
+        "Mansoor, Yaqub",
+        "Mohammad Yaqub Al-Rashidi",
+        "Yaqoob, Muhammad",
+        "Yaqub, Muhammad Qari Maulana",
+        "Yaqub Mclintock",
+        "Yakoob Macclintock",
+        "Mohammed, Yaqub",
+        "Yacub, Qari",
+        "Yaqoob, Qari",
+        "Yacoub, Qari",
+        "Yaqub, Qari",
+        "Yakub, Qari",
+        "Al Scotlandi, Qari",
+        "Al-Skotlandi, Abu Abdullah"
+      ],
+      "position": [
+        "Minister of Defense"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1964-03-23",
+        "1964-03-22"
+      ],
+      "nationality": [
+        "gb",
+        "pk"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "706309249",
+        "40526584",
+        "039822418",
+        "AA1721192",
+        "AA1721191"
+      ],
+      "idNumber": [
+        "6110159731197",
+        "8265866120651"
+      ],
+      "address": [
+        "Islamabad, Pakistan",
+        "Peshawar, Pakistan"
+      ],
+      "notes": [
+        "Programs: SDGT",
+        "(Linked To: LASHKAR E-TAYYIBA; Linked To: TALIBAN; Linked To: AL QA'IDA)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/afghanistan/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Afghanistan",
+    "country_code": "af",
+    "date_updated": "",
+    "ofac_uid": "19680",
+    "merged_from": [
+      "9d2cf264-d4ab-5d45-98ec-1b8379096861",
+      "37418011-98a5-56f9-b679-f79b0e1217a8"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "8a1044d0-7439-5a75-8459-304278555b71",
+    "properties": {
+      "name": [
+        "Sirajuddin Haqqani"
+      ],
+      "firstName": [
+        "Sirajuddin"
+      ],
+      "lastName": [
+        "Haqqani"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Sirajuddin Haqani",
+        "Siraj Haqqani",
+        "Siraj Haqani",
+        "Saraj Haqqani",
+        "Saraj Haqani",
+        "Sirajuddin Haqqani"
+      ],
+      "position": [
+        "Minister of Interior"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1977",
+        "1978",
+        "1970"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Miramshah, North Waziristan, FATA, NWFP, Pakistan",
+        "North Waziristan, FATA, NWFP, Pakistan",
+        "Pakistan"
+      ],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/afghanistan/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Afghanistan",
+    "country_code": "af",
+    "date_updated": "",
+    "ofac_uid": "10743",
+    "merged_from": [
+      "8a1044d0-7439-5a75-8459-304278555b71",
+      "974543db-3500-5467-9e9e-a4a3cc959b7c"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "7e0012d0-27e3-5061-8bf3-191f6cf1621f",
+    "properties": {
+      "name": [
+        "Khalid"
+      ],
+      "firstName": [
+        "Mustafa Mohamed"
+      ],
+      "lastName": [
+        "Khalid"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Moustafa Ali Elbishy",
+        "Mustafa Mohammed",
+        "Mustafa Fazul",
+        "Hussein",
+        "Mustafa Muhamad Fadil",
+        "Abd Al Wakil Al Masri",
+        "Anis, Abu",
+        "Yussrr, Abu",
+        "Hassan Ali",
+        "Nu Man",
+        "Khalid",
+        "Abu Jihad",
+        "Abu Al-Nubi"
+      ],
+      "position": [
+        "Deputy Prime Minister & Minister for Infrastructure"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1976-06-23"
+      ],
+      "nationality": [],
+      "citizenship": [
+        "eg",
+        "ke"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "201735161",
+        "12773667"
+      ],
+      "address": [],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/bahrain/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Bahrain",
+    "country_code": "bh",
+    "date_updated": "",
+    "ofac_uid": "6924",
+    "merged_from": [
+      "7e0012d0-27e3-5061-8bf3-191f6cf1621f",
+      "78f2ce4c-e1d5-5ad3-a5bc-22754c68a729"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "1e999d41-dc96-5205-a920-4fcd290814e6",
+    "properties": {
+      "name": [
+        "Rashid"
+      ],
+      "firstName": [
+        "Muhammad"
+      ],
+      "lastName": [
+        "Rashid"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Muhammad Abd Al-Karim Al-Ghazali",
+        "Abu Hisham Mawari",
+        "Abu Hisham Al-Mawari",
+        "Abu Sa'Id",
+        "Abu Faris",
+        "Rashid"
+      ],
+      "position": [
+        "Minister of Interior"
+      ],
+      "title": [
+        "Lt. Gen."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1988",
+        "1987",
+        "1989"
+      ],
+      "nationality": [
+        "ye"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/bahrain/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Bahrain",
+    "country_code": "bh",
+    "date_updated": "",
+    "ofac_uid": "23335",
+    "merged_from": [
+      "1e999d41-dc96-5205-a920-4fcd290814e6",
+      "cf9bcb9f-16d9-54fc-864e-95a75b6df554"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "54adc403-38fb-599b-8437-50bdd82edbf8",
+    "properties": {
+      "name": [
+        "Noor"
+      ],
+      "firstName": [
+        "Aschraf"
+      ],
+      "lastName": [
+        "Noor"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Noor"
+      ],
+      "position": [
+        "Minister of Sustainable Development"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1969-04-28"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Beckum, Germany, 59269",
+        "Altenburg, Germany, 04600"
+      ],
+      "notes": [
+        "Programs: SDGT",
+        "nationality possibly Palestinian;arrested 23 Apr 2002"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/bahrain/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Bahrain",
+    "country_code": "bh",
+    "date_updated": "",
+    "ofac_uid": "7942",
+    "merged_from": [
+      "54adc403-38fb-599b-8437-50bdd82edbf8",
+      "19ef1796-8f4f-5bab-9841-f5709a562dfa"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "04a9459c-862c-5276-b1cd-bbe1192b9e80",
+    "properties": {
+      "name": [
+        "Abdur Rahman"
+      ],
+      "firstName": [
+        "Abdur"
+      ],
+      "lastName": [
+        "Rahman"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Abdul Rehman",
+        "Abd Ur-Rehman",
+        "Abdur Rahman",
+        "Abdul Rehman Sindhi",
+        "Abdul Rehman Al-Sindhi",
+        "Abdur Rahman Al-Sindhi",
+        "Abdur Rehman Sindi",
+        "Abdurahman Sindhi",
+        "Abdullah Sindhi",
+        "Abdur Rehman Muhammad Yamin"
+      ],
+      "position": [
+        "Minister of Fisheries & Livestock"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1965-10-03"
+      ],
+      "nationality": [
+        "pk"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "CV9157521"
+      ],
+      "idNumber": [
+        "44103-5251752-5"
+      ],
+      "address": [
+        "Karachi, Pakistan"
+      ],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/bangladesh/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Bangladesh",
+    "country_code": "bd",
+    "date_updated": "",
+    "ofac_uid": "12922",
+    "merged_from": [
+      "04a9459c-862c-5276-b1cd-bbe1192b9e80",
+      "f271c748-afeb-51eb-9bbc-1a9d3254722d"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "928d4f05-b0ba-5cf1-84d6-44838e4dc4a6",
+    "properties": {
+      "name": [
+        "Min Aung Hlaing"
+      ],
+      "firstName": [
+        "Min Aung"
+      ],
+      "lastName": [
+        "Hlaing"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "President"
+      ],
+      "title": [
+        "Ret. Sr. Gen."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1956-07-03"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014, GLOMAG"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "27225",
+    "merged_from": [
+      "928d4f05-b0ba-5cf1-84d6-44838e4dc4a6",
+      "aefc9d4a-ee59-504a-bb2b-38969074ec6c"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "c4b635e6-a2d9-5a9e-824d-c3d8d92a0728",
+    "properties": {
+      "name": [
+        "Mya Tun Oo"
+      ],
+      "firstName": [
+        "Mya Tun"
+      ],
+      "lastName": [
+        "Oo"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Digital Development & Communications"
+      ],
+      "title": [
+        "Ret. Gen."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1961-05-04",
+        "1961-05-05"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "31131",
+    "merged_from": [
+      "c4b635e6-a2d9-5a9e-824d-c3d8d92a0728",
+      "5b17c30c-7c1c-5112-9ab8-415b36e32d58"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "b05ed206-a84b-5bef-ad39-8bfa03419c61",
+    "properties": {
+      "name": [
+        "Tin Aung San"
+      ],
+      "firstName": [
+        "Tin Aung"
+      ],
+      "lastName": [
+        "San"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of the President’s Office"
+      ],
+      "title": [
+        "Ret. Gen."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1960-10-16"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Burma"
+      ],
+      "notes": [
+        "Programs: BURMA-EO14014"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/burma/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Burma",
+    "country_code": "zm",
+    "date_updated": "",
+    "ofac_uid": "31133",
+    "merged_from": [
+      "b05ed206-a84b-5bef-ad39-8bfa03419c61",
+      "ceb3204d-198c-575f-9e43-f0cfba38f11b"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "473e59b9-1af0-5b02-8e2a-f8800f4b65b2",
+    "properties": {
+      "name": [
+        "Daniel Rojas"
+      ],
+      "firstName": [
+        "Daniel"
+      ],
+      "lastName": [
+        "Rojas"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Juan Gonzalez Diaz"
+      ],
+      "position": [
+        "Minister of Education"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1977-02-10",
+        "1976-09-28",
+        "1977-02-11"
+      ],
+      "nationality": [
+        "mx"
+      ],
+      "citizenship": [
+        "mx"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "1-1-22-07-00030905-3",
+        "U22-30905"
+      ],
+      "address": [
+        "Tlajomulco De Zuniga, Jalisco, Mexico",
+        "Comapa, Jutiapa, Guatemala",
+        "Valle Hermoso, Tamaulipas, Mexico",
+        "Matamoros, Tamaulipas, Mexico"
+      ],
+      "notes": [
+        "Programs: SDNTK"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/colombia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Colombia",
+    "country_code": "co",
+    "date_updated": "",
+    "ofac_uid": "11940",
+    "merged_from": [
+      "473e59b9-1af0-5b02-8e2a-f8800f4b65b2",
+      "c7b3a461-22d5-55b3-960d-563ebb778d0c"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "cf058af9-663e-5535-8b82-78605ef54816",
+    "properties": {
+      "name": [
+        "Lazaro Alberto Alvarez Casas"
+      ],
+      "firstName": [
+        "Lazaro Alberto"
+      ],
+      "lastName": [
+        "Alvarez Casas"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Interior"
+      ],
+      "title": [
+        "Corps Gen."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1963"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Cuba"
+      ],
+      "notes": [
+        "Programs: GLOMAG"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/cuba/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Cuba",
+    "country_code": "cu",
+    "date_updated": "",
+    "ofac_uid": "30977",
+    "merged_from": [
+      "cf058af9-663e-5535-8b82-78605ef54816",
+      "084ddaf3-1225-5943-b049-4579fb30fb60"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "3d523dcd-c8d6-5e00-b157-3197d7b04786",
+    "properties": {
+      "name": [
+        "Antonio Rodriguez Rodriguez"
+      ],
+      "firstName": [
+        "Antonio"
+      ],
+      "lastName": [
+        "Rodriguez Rodriguez"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Mario Antonio Rodriguez Ezpinoza"
+      ],
+      "position": [
+        "President, National Hydraulic Resources Institute"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1966-02-16"
+      ],
+      "nationality": [],
+      "citizenship": [
+        "ve"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "6859414"
+      ],
+      "address": [
+        "Miranda, Venezuela"
+      ],
+      "notes": [
+        "Programs: SDNTK",
+        "(Linked To: INVERSIONES MALAMAR R, C.A.)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/cuba/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Cuba",
+    "country_code": "cu",
+    "date_updated": "",
+    "ofac_uid": "23885",
+    "merged_from": [
+      "3d523dcd-c8d6-5e00-b157-3197d7b04786",
+      "4f35863a-4359-5735-8268-f9c498656f56"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "e8c40052-304a-5114-8742-1f79872d6752",
+    "properties": {
+      "name": [
+        "Hassan Abdullah"
+      ],
+      "firstName": [
+        "Hassan"
+      ],
+      "lastName": [
+        "Abdullah"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Hasan Ni'Mah"
+      ],
+      "position": [
+        "Governor, Central Bank of Egypt"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1953-09-20"
+      ],
+      "nationality": [
+        "lb"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "L1391989"
+      ],
+      "idNumber": [
+        "000024733429"
+      ],
+      "address": [
+        "Nabatieh, Lebanon"
+      ],
+      "notes": [
+        "Programs: SDGT",
+        "(Linked To: HIZBALLAH)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/egypt/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Egypt",
+    "country_code": "eg",
+    "date_updated": "",
+    "ofac_uid": "54135",
+    "merged_from": [
+      "e8c40052-304a-5114-8742-1f79872d6752",
+      "34f737b8-18ae-5d23-b4f4-43393dbdcf17"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "f0d138bd-ee5c-52c9-a34f-5124674cac54",
+    "properties": {
+      "name": [
+        "Fernando Lopez"
+      ],
+      "firstName": [
+        "Fernando"
+      ],
+      "lastName": [
+        "Lopez"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Environment & Natural Resources"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1971-04-11"
+      ],
+      "nationality": [
+        "mx"
+      ],
+      "citizenship": [
+        "mx"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "B7439509",
+        "LOTF710412HTSPRR03"
+      ],
+      "address": [
+        "Comitan, Chiapas, Mexico, C.P. 3000"
+      ],
+      "notes": [
+        "Programs: SDNTK"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/el-salvador/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "El Salvador",
+    "country_code": "sv",
+    "date_updated": "",
+    "ofac_uid": "11944",
+    "merged_from": [
+      "f0d138bd-ee5c-52c9-a34f-5124674cac54",
+      "c9daa33a-6a20-5d27-b0b7-048ea14371b7"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "7ec37335-6739-5157-8326-99c88df24edb",
+    "properties": {
+      "name": [
+        "Ahmed Ibrahim"
+      ],
+      "firstName": [
+        "Ahmed"
+      ],
+      "lastName": [
+        "Ibrahim"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Ahmed Ibrahim",
+        "Ahmad Al-Ubrahimi"
+      ],
+      "position": [
+        "Minister of Local Government, Chieftaincy, & Religious Affairs"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1970-06-24"
+      ],
+      "nationality": [
+        "dz"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "309859713"
+      ],
+      "idNumber": [],
+      "address": [
+        "Algiers, Algeria, 16200"
+      ],
+      "notes": [
+        "Programs: SDGT",
+        "(Linked To: HAMAS)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/ghana/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Ghana",
+    "country_code": "gh",
+    "date_updated": "",
+    "ofac_uid": "53913",
+    "merged_from": [
+      "7ec37335-6739-5157-8326-99c88df24edb",
+      "eef70c62-3e7f-5c71-b928-5a56f76e3e63"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "f9c11f75-2319-572a-8e2f-c836357552e5",
+    "properties": {
+      "name": [
+        "Jong Un Kim"
+      ],
+      "firstName": [
+        "Jong Un"
+      ],
+      "lastName": [
+        "Kim"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "President, State Affairs Commission (SAC)",
+        "Chairman Of The Workers' Party Of Korea"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1984-01-08"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Korea, North"
+      ],
+      "notes": [
+        "Programs: DPRK3"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "20157",
+    "merged_from": [
+      "f9c11f75-2319-572a-8e2f-c836357552e5",
+      "27cd710a-4ea3-532d-aa47-f386f832cb57"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "215fc3a7-2dba-54d1-877b-cdbd40681523",
+    "properties": {
+      "name": [
+        "Ryong Hae Choe"
+      ],
+      "firstName": [
+        "Ryong Hae"
+      ],
+      "lastName": [
+        "Choe"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Ryong-Hae Ch'Oe"
+      ],
+      "position": [
+        "First President, SAC",
+        "Director Of The Workers' Party Of Korea Organization And Guidance Department"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1950-01-15"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [],
+      "notes": [
+        "Programs: DPRK2"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "23213",
+    "merged_from": [
+      "215fc3a7-2dba-54d1-877b-cdbd40681523",
+      "8d06c9b6-acc5-5d74-8218-083c6bfb4599"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "4a19256d-6939-57ce-8382-7eb6928ad8dd",
+    "properties": {
+      "name": [
+        "Yong Won Jo"
+      ],
+      "firstName": [
+        "Yong Won"
+      ],
+      "lastName": [
+        "Jo"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Yongwon Cho"
+      ],
+      "position": [
+        "Member, SAC",
+        "Vice Director Of The Organization And Guidance Department"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1957-10-24"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Korea, North"
+      ],
+      "notes": [
+        "Programs: DPRK2"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "21303",
+    "merged_from": [
+      "4a19256d-6939-57ce-8382-7eb6928ad8dd",
+      "55a48616-b640-5815-a87c-25b4cfe3e968"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "cd2e7228-83bc-53ae-9022-290f7f52a37f",
+    "properties": {
+      "name": [
+        "Yo Jong Kim"
+      ],
+      "firstName": [
+        "Yo Jong"
+      ],
+      "lastName": [
+        "Kim"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Yo'-Cho'Ng Kim"
+      ],
+      "position": [
+        "Member, SAC",
+        "Vice Director Of The Workers' Party Of Korea Propaganda And Agitation Department"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1989-09-26"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Korea, North"
+      ],
+      "notes": [
+        "Programs: DPRK2"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/korea-north/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Korea, North",
+    "country_code": "kp",
+    "date_updated": "",
+    "ofac_uid": "21444",
+    "merged_from": [
+      "cd2e7228-83bc-53ae-9022-290f7f52a37f",
+      "a2cd88a3-e25a-5b1e-8921-c9e13a52648e"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "2992c062-eb4d-5f44-be4b-d0bca30b2249",
+    "properties": {
+      "name": [
+        "AHMAD Abdullah"
+      ],
+      "firstName": [
+        "AHMAD"
+      ],
+      "lastName": [
+        "Abdullah"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Hussein Ahmad Abdallah"
+      ],
+      "position": [
+        "Prime Minister"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1996-02-11"
+      ],
+      "nationality": [
+        "lb"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Bir Hassan, Lebanon"
+      ],
+      "notes": [
+        "Programs: SDGT",
+        "(Linked To: ABDALLAH, Ahmad Jalal Reda)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/kuwait/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Kuwait",
+    "country_code": "kw",
+    "date_updated": "",
+    "ofac_uid": "37430",
+    "merged_from": [
+      "2992c062-eb4d-5f44-be4b-d0bca30b2249",
+      "03bf3df6-4d1a-5321-aa17-c0a739c13d96"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "ba85892a-2410-57a7-8218-715f1e6d6cfb",
+    "properties": {
+      "name": [
+        "MUHAMMAD Abdallah"
+      ],
+      "firstName": [
+        "MUHAMMAD"
+      ],
+      "lastName": [
+        "Abdallah"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Abdallah Fazul",
+        "Abdalla Fazul",
+        "Abdallah Mohammed Fazul",
+        "Fazul Abdilahi Mohammed",
+        "Fazul Adballah",
+        "Fazul Abdalla",
+        "Fazul Mohammed",
+        "Haroon",
+        "Harun",
+        "Haroon Fazul",
+        "Harun Fazul",
+        "Fadil Abdallah Muhamad",
+        "Fadhil Haroun",
+        "Al Sudani, Abu Seif",
+        "Abu Aisha",
+        "Abu Luqman",
+        "Fadel Abdallah Mohammed Ali",
+        "Fouad Mohammed"
+      ],
+      "position": [
+        "Minister of State for Amiri Diwan Affairs"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1972-08-25",
+        "1974-12-25",
+        "1974-02-25"
+      ],
+      "nationality": [],
+      "citizenship": [
+        "km",
+        "ke"
+      ],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/kuwait/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Kuwait",
+    "country_code": "kw",
+    "date_updated": "",
+    "ofac_uid": "6927",
+    "merged_from": [
+      "ba85892a-2410-57a7-8218-715f1e6d6cfb",
+      "a455f54b-b205-589e-88a4-a22dafc9e3a0"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "6d580cd0-246d-59b1-92c3-1232ce7035b2",
+    "properties": {
+      "name": [
+        "Muhammad Haidar"
+      ],
+      "firstName": [
+        "Muhammad"
+      ],
+      "lastName": [
+        "Haidar"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Muhammad Ali Haydar",
+        "Mohamad Ali Haidar",
+        "Haydar, Abu Ali"
+      ],
+      "position": [
+        "Minister of Labor"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1959-11-25"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [
+        "469/2005"
+      ],
+      "idNumber": [],
+      "address": [],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/lebanon/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Lebanon",
+    "country_code": "lb",
+    "date_updated": "",
+    "ofac_uid": "27321",
+    "merged_from": [
+      "6d580cd0-246d-59b1-92c3-1232ce7035b2",
+      "a0ab2f33-f730-54b9-85db-4d9ed14f6087"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "e99a93cd-d651-54c7-9cfb-47b31d79bd9e",
+    "properties": {
+      "name": [
+        "Abd-al-Munim Salih"
+      ],
+      "firstName": [
+        "Abd-al-Munim"
+      ],
+      "lastName": [
+        "Salih"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Abdel Moneim Ahmad Saleh"
+      ],
+      "position": [
+        "Minister of Civil Service"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1943"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Iraq"
+      ],
+      "notes": [
+        "Programs: IRAQ2",
+        "Former Minister of Awqaf and Religious Affairs"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/libya/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Libya",
+    "country_code": "ly",
+    "date_updated": "",
+    "ofac_uid": "8401",
+    "merged_from": [
+      "e99a93cd-d651-54c7-9cfb-47b31d79bd9e",
+      "2bf5bf20-fcd4-54f5-ac78-44b69e348d79"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "d20da13a-5329-5e8a-992a-0d941f901075",
+    "properties": {
+      "name": [
+        "Muhammad Said"
+      ],
+      "firstName": [
+        "Muhammad"
+      ],
+      "lastName": [
+        "Said"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Muhammad Said Adhafah",
+        "Saeed, Mohammed",
+        "Mohammed Saeed Othafa Albehadili",
+        "Muhammad Sa'Id 'Adhafah Al-Bahadili"
+      ],
+      "position": [
+        "Minister of Industry & Minerals"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1970-03-04"
+      ],
+      "nationality": [
+        "iq"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "A3347475"
+      ],
+      "idNumber": [],
+      "address": [
+        "Iraq"
+      ],
+      "notes": [
+        "Programs: IFSR, SDGT",
+        "(Linked To: AL KHAMAEL MARITIME SERVICES)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/libya/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Libya",
+    "country_code": "ly",
+    "date_updated": "",
+    "ofac_uid": "28691",
+    "merged_from": [
+      "d20da13a-5329-5e8a-992a-0d941f901075",
+      "d0d71b8c-d60c-5e4f-9f84-da1dc25ef2e3"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "c078f534-6871-5142-b5e6-afb51e613971",
+    "properties": {
+      "name": [
+        "Mohamad Hasan"
+      ],
+      "firstName": [
+        "Mohamad"
+      ],
+      "lastName": [
+        "Hasan"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Fabio Fusco",
+        "Mohamed Hassan",
+        "Abu Thale",
+        "Mehrez Ben Mahmoud Ben Sassi Al-Amdouni",
+        "Meherez Hamdouni",
+        "Mehrez Ben Tah Amdouni",
+        "Meherez Ben Ahdoud Ben Amdouni"
+      ],
+      "position": [
+        "Minister of Foreign Affairs"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1969-12-18",
+        "1968-05-25",
+        "1968-12-18",
+        "1969-07-14"
+      ],
+      "nationality": [
+        "tn"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "G737411",
+        "0801888"
+      ],
+      "idNumber": [],
+      "address": [],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/malaysia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Malaysia",
+    "country_code": "my",
+    "date_updated": "",
+    "ofac_uid": "7828",
+    "merged_from": [
+      "c078f534-6871-5142-b5e6-afb51e613971",
+      "6c045924-0379-5283-8062-e3942f94735d"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "151f7c69-018e-5415-a4f3-dec4847a0cbb",
+    "properties": {
+      "name": [
+        "Mohamed Saeed"
+      ],
+      "firstName": [
+        "Mohamed"
+      ],
+      "lastName": [
+        "Saeed"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Sa'Id Ajili"
+      ],
+      "position": [
+        "Minister of Economic Development and Trade"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1982-09-03"
+      ],
+      "nationality": [
+        "ir"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [],
+      "notes": [
+        "Programs: TCO",
+        "(Linked To: AJILY SOFTWARE PROCUREMENT GROUP)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/maldives/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Maldives",
+    "country_code": "mv",
+    "date_updated": "",
+    "ofac_uid": "22699",
+    "merged_from": [
+      "151f7c69-018e-5415-a4f3-dec4847a0cbb",
+      "1671ce01-bc8d-5c82-978f-e559b3e5a67a"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "df7ee2f8-209e-5be5-806f-210226dae1b8",
+    "properties": {
+      "name": [
+        "David Paul"
+      ],
+      "firstName": [
+        "David"
+      ],
+      "lastName": [
+        "Paul"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Finance, Banking, & Postal Services"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1990-05-05"
+      ],
+      "nationality": [
+        "gb"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "507244751"
+      ],
+      "idNumber": [],
+      "address": [
+        "Zimbabwe"
+      ],
+      "notes": [
+        "Programs: GLOMAG",
+        "(Linked To: PATTNI, Kamlesh Mansukhlal Damji)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/marshall-islands/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Marshall Islands",
+    "country_code": "mh",
+    "date_updated": "",
+    "ofac_uid": "52088",
+    "merged_from": [
+      "df7ee2f8-209e-5be5-806f-210226dae1b8",
+      "02239112-3fce-55fe-af97-1ef7537ab990"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "4e78c968-8f53-5ca9-9d58-c415cf103985",
+    "properties": {
+      "name": [
+        "Khalid"
+      ],
+      "firstName": [
+        "Mustafa Mohamed"
+      ],
+      "lastName": [
+        "Khalid"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Moustafa Ali Elbishy",
+        "Mustafa Mohammed",
+        "Mustafa Fazul",
+        "Hussein",
+        "Mustafa Muhamad Fadil",
+        "Abd Al Wakil Al Masri",
+        "Anis, Abu",
+        "Yussrr, Abu",
+        "Hassan Ali",
+        "Nu Man",
+        "Khalid",
+        "Abu Jihad",
+        "Abu Al-Nubi"
+      ],
+      "position": [
+        "Minister of Diwan of the Royal Court"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1976-06-23"
+      ],
+      "nationality": [],
+      "citizenship": [
+        "eg",
+        "ke"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "201735161",
+        "12773667"
+      ],
+      "address": [],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/oman/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Oman",
+    "country_code": "om",
+    "date_updated": "",
+    "ofac_uid": "6924",
+    "merged_from": [
+      "4e78c968-8f53-5ca9-9d58-c415cf103985",
+      "78f2ce4c-e1d5-5ad3-a5bc-22754c68a729"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "15b933c9-2607-5ac8-bfdb-2a4886cba009",
+    "properties": {
+      "name": [
+        "Abdallah"
+      ],
+      "firstName": [
+        "Youssef"
+      ],
+      "lastName": [
+        "Abdallah"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Abu Abdullah",
+        "Abdellah",
+        "Abdullah",
+        "Youssef Ben Abdul Baki Ben Youcef Abdaoui"
+      ],
+      "position": [
+        "Deputy Amir"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1966-06-04"
+      ],
+      "nationality": [
+        "tn"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "G025057"
+      ],
+      "idNumber": [
+        "AO 2879097"
+      ],
+      "address": [
+        "Varese, Italy",
+        "Cassano Magnago (VA), Italy"
+      ],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/qatar/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Qatar",
+    "country_code": "qa",
+    "date_updated": "",
+    "ofac_uid": "7826",
+    "merged_from": [
+      "15b933c9-2607-5ac8-bfdb-2a4886cba009",
+      "4b6ad94e-d646-5444-b68c-e56518a47184"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "74b58448-d3f9-5c70-bafe-f5108440c886",
+    "properties": {
+      "name": [
+        "Khalid"
+      ],
+      "firstName": [
+        "Mustafa Mohamed"
+      ],
+      "lastName": [
+        "Khalid"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Moustafa Ali Elbishy",
+        "Mustafa Mohammed",
+        "Mustafa Fazul",
+        "Hussein",
+        "Mustafa Muhamad Fadil",
+        "Abd Al Wakil Al Masri",
+        "Anis, Abu",
+        "Yussrr, Abu",
+        "Hassan Ali",
+        "Nu Man",
+        "Khalid",
+        "Abu Jihad",
+        "Abu Al-Nubi"
+      ],
+      "position": [
+        "Deputy Prime Minister"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1976-06-23"
+      ],
+      "nationality": [],
+      "citizenship": [
+        "eg",
+        "ke"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "201735161",
+        "12773667"
+      ],
+      "address": [],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/qatar/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Qatar",
+    "country_code": "qa",
+    "date_updated": "",
+    "ofac_uid": "6924",
+    "merged_from": [
+      "74b58448-d3f9-5c70-bafe-f5108440c886",
+      "78f2ce4c-e1d5-5ad3-a5bc-22754c68a729"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "ac9a0fed-f11f-5042-aeaa-f1ae2e4179bd",
+    "properties": {
+      "name": [
+        "Abdallah"
+      ],
+      "firstName": [
+        "Youssef"
+      ],
+      "lastName": [
+        "Abdallah"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Abu Abdullah",
+        "Abdellah",
+        "Abdullah",
+        "Youssef Ben Abdul Baki Ben Youcef Abdaoui"
+      ],
+      "position": [
+        "Governor, Qatar Central Bank"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1966-06-04"
+      ],
+      "nationality": [
+        "tn"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "G025057"
+      ],
+      "idNumber": [
+        "AO 2879097"
+      ],
+      "address": [
+        "Varese, Italy",
+        "Cassano Magnago (VA), Italy"
+      ],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/qatar/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Qatar",
+    "country_code": "qa",
+    "date_updated": "",
+    "ofac_uid": "7826",
+    "merged_from": [
+      "ac9a0fed-f11f-5042-aeaa-f1ae2e4179bd",
+      "4b6ad94e-d646-5444-b68c-e56518a47184"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "6c144204-64bc-5e4e-92d4-4835465202fd",
+    "properties": {
+      "name": [
+        "ABD al-Aziz"
+      ],
+      "firstName": [
+        "ABD"
+      ],
+      "lastName": [
+        "al-Aziz"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Interior",
+        "Chief Ideological Figure Of Palestinian Islamic Jihad - Shiqaqi"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1946"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/saudi-arabia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Saudi Arabia",
+    "country_code": "sa",
+    "date_updated": "",
+    "ofac_uid": "2678",
+    "merged_from": [
+      "6c144204-64bc-5e4e-92d4-4835465202fd",
+      "b616033a-9cb3-5501-a3da-09da5d22ae75"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "39798edd-3bf5-5997-8566-aab86af8af9a",
+    "properties": {
+      "name": [
+        "Martin Elia Lomuro"
+      ],
+      "firstName": [
+        "Martin Elia"
+      ],
+      "lastName": [
+        "Lomuro"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Martin Elia Lomoro",
+        "Martin Elias Lomoro"
+      ],
+      "position": [
+        "Minister of Cabinet Affairs"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1957-12-28"
+      ],
+      "nationality": [],
+      "citizenship": [
+        "ss",
+        "sd"
+      ],
+      "passportNumber": [
+        "D00002571",
+        "D00009058"
+      ],
+      "idNumber": [],
+      "address": [
+        "Juba, South Sudan"
+      ],
+      "notes": [
+        "Programs: SOUTH SUDAN"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/south-sudan/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "South Sudan",
+    "country_code": "ss",
+    "date_updated": "",
+    "ofac_uid": "24388",
+    "merged_from": [
+      "39798edd-3bf5-5997-8566-aab86af8af9a",
+      "5a4c48bd-79d7-5768-9551-ef0058fdfcfc"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "93f38396-d1ec-5818-a7cd-bd96fce10d48",
+    "properties": {
+      "name": [
+        "Muhammad Bashir"
+      ],
+      "firstName": [
+        "Muhammad"
+      ],
+      "lastName": [
+        "Bashir"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Mohammed Albashir",
+        "Muhammad Al-Bashir",
+        "Bashir Mohammed Ibrahim Al-Faqi",
+        "Abu Mohammed",
+        "Mohammed Ismail",
+        "Abu Abd Al-Rahman",
+        "Abd  Al Rahman Al-Khatab",
+        "Mustafa",
+        "Mahmud",
+        "Abu Khalid",
+        "Al-Basher Mohammed"
+      ],
+      "position": [
+        "Minister of Mining"
+      ],
+      "title": [
+        "Dr."
+      ],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1959-12-15"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Birmingham, United Kingdom"
+      ],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/sudan/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Sudan",
+    "country_code": "sd",
+    "date_updated": "",
+    "ofac_uid": "9595",
+    "merged_from": [
+      "93f38396-d1ec-5818-a7cd-bd96fce10d48",
+      "112d7d7d-07f3-5544-a073-3b9ad5d645da"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "93331f90-284e-50df-8f23-16e75e367623",
+    "properties": {
+      "name": [
+        "Khalifa Ahmed Khalifa"
+      ],
+      "firstName": [
+        "Khalifa Ahmed"
+      ],
+      "lastName": [
+        "Khalifa"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Khalifa Ghwell",
+        "Khalifah Al-Ghuwayl",
+        "Khalifa Al-Ghweil"
+      ],
+      "position": [
+        "Attorney General",
+        "Prime Minister And Defense Minister Of The National Salvation Government"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1956-01-01"
+      ],
+      "nationality": [
+        "ly"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "A005465"
+      ],
+      "idNumber": [],
+      "address": [
+        "Misurata, Libya"
+      ],
+      "notes": [
+        "Programs: LIBYA3"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/sudan/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Sudan",
+    "country_code": "sd",
+    "date_updated": "",
+    "ofac_uid": "19769",
+    "merged_from": [
+      "93331f90-284e-50df-8f23-16e75e367623",
+      "ac7db0e1-9354-5ecb-81b1-c2d4a4d8d20c"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "c2369b0c-9fa5-5e0b-a144-0128a0d33c6e",
+    "properties": {
+      "name": [
+        "Muhammad al-Bashir"
+      ],
+      "firstName": [
+        "Muhammad"
+      ],
+      "lastName": [
+        "al-Bashir"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Mohammed Albashir",
+        "Muhammad Al-Bashir",
+        "Bashir Mohammed Ibrahim Al-Faqi",
+        "Abu Mohammed",
+        "Mohammed Ismail",
+        "Abu Abd Al-Rahman",
+        "Abd  Al Rahman Al-Khatab",
+        "Mustafa",
+        "Mahmud",
+        "Abu Khalid",
+        "Al-Basher Mohammed"
+      ],
+      "position": [
+        "Minister of Energy"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1959-12-15"
+      ],
+      "nationality": [],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [],
+      "address": [
+        "Birmingham, United Kingdom"
+      ],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/syria/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Syria",
+    "country_code": "sy",
+    "date_updated": "",
+    "ofac_uid": "9595",
+    "merged_from": [
+      "c2369b0c-9fa5-5e0b-a144-0128a0d33c6e",
+      "112d7d7d-07f3-5544-a073-3b9ad5d645da"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "6dad241d-ae83-5d82-a5f1-7d5b6ce19ca5",
+    "properties": {
+      "name": [
+        "Ahmed Bouhali"
+      ],
+      "firstName": [
+        "Ahmed"
+      ],
+      "lastName": [
+        "Bouhali"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Abu Katada"
+      ],
+      "position": [
+        "Minister of Religious Affairs"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1963-05-31"
+      ],
+      "nationality": [
+        "ma"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [
+        "LBHHMD63E31Z330M"
+      ],
+      "address": [
+        "Cremona, Italy"
+      ],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/tunisia/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Tunisia",
+    "country_code": "tn",
+    "date_updated": "",
+    "ofac_uid": "9356",
+    "merged_from": [
+      "6dad241d-ae83-5d82-a5f1-7d5b6ce19ca5",
+      "4e0f7503-c8f3-52ed-b788-f0ff28b842ec"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "1a06a854-24b6-5e51-9773-84471032b5de",
+    "properties": {
+      "name": [
+        "Abdallah"
+      ],
+      "firstName": [
+        "Youssef"
+      ],
+      "lastName": [
+        "Abdallah"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Abu Abdullah",
+        "Abdellah",
+        "Abdullah",
+        "Youssef Ben Abdul Baki Ben Youcef Abdaoui"
+      ],
+      "position": [
+        "Deputy Prime Minister"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1966-06-04"
+      ],
+      "nationality": [
+        "tn"
+      ],
+      "citizenship": [],
+      "passportNumber": [
+        "G025057"
+      ],
+      "idNumber": [
+        "AO 2879097"
+      ],
+      "address": [
+        "Varese, Italy",
+        "Cassano Magnago (VA), Italy"
+      ],
+      "notes": [
+        "Programs: SDGT"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/united-arab-emirates/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "United Arab Emirates",
+    "country_code": "ae",
+    "date_updated": "",
+    "ofac_uid": "7826",
+    "merged_from": [
+      "1a06a854-24b6-5e51-9773-84471032b5de",
+      "4b6ad94e-d646-5444-b68c-e56518a47184"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "97d98aa4-12ab-5ad5-8a91-a3f8304101f5",
+    "properties": {
+      "name": [
+        "Alejandro Sanchez"
+      ],
+      "firstName": [
+        "Alejandro"
+      ],
+      "lastName": [
+        "Sanchez"
+      ],
+      "nameSuffix": [],
+      "alias": [
+        "Jesus Alexandro Sanchez Felix",
+        "Alejandro Fernandez Felix",
+        "Jesus Alejandro Sanchez",
+        "Jesus Sanchez Felix",
+        "El Ruso",
+        "El Russo",
+        "Ginete"
+      ],
+      "position": [
+        "Secretary of the Presidency"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1982-05-20",
+        "1982-06-20"
+      ],
+      "nationality": [
+        "mx"
+      ],
+      "citizenship": [],
+      "passportNumber": [],
+      "idNumber": [
+        "POFJ820520HSRNLN04"
+      ],
+      "address": [
+        "Mexicali, Baja California, Mexico"
+      ],
+      "notes": [
+        "Programs: SDGT, ILLICIT-DRUGS-EO14059",
+        "(Linked To: SINALOA CARTEL)"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/uruguay/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Uruguay",
+    "country_code": "uy",
+    "date_updated": "",
+    "ofac_uid": "54695",
+    "merged_from": [
+      "97d98aa4-12ab-5ad5-8a91-a3f8304101f5",
+      "2fbcd895-3caf-517d-a032-01e1ff4d1ecd"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "efd0110e-aa67-5e16-8d24-70ed37d57d84",
+    "properties": {
+      "name": [
+        "Diosdado Cabello Rondon"
+      ],
+      "firstName": [
+        "Diosdado"
+      ],
+      "lastName": [
+        "Cabello Rondon"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Interior, Justice & Peace"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1963-04-15"
+      ],
+      "nationality": [],
+      "citizenship": [
+        "ve"
+      ],
+      "passportNumber": [
+        "A0237802"
+      ],
+      "idNumber": [
+        "8370825"
+      ],
+      "address": [
+        "Monagas, Venezuela"
+      ],
+      "notes": [
+        "Programs: VENEZUELA"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/venezuela/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Venezuela",
+    "country_code": "ve",
+    "date_updated": "",
+    "ofac_uid": "24424",
+    "merged_from": [
+      "efd0110e-aa67-5e16-8d24-70ed37d57d84",
+      "45af64cb-b7e9-5f82-baff-16aa6248caa8"
+    ]
+  },
+  {
+    "schema": "Person",
+    "id": "f2f02e00-906c-5e6f-b455-ea782eaa5d1c",
+    "properties": {
+      "name": [
+        "Julio Garcia Zerpa"
+      ],
+      "firstName": [
+        "Julio Garcia"
+      ],
+      "lastName": [
+        "Zerpa"
+      ],
+      "nameSuffix": [],
+      "alias": [],
+      "position": [
+        "Minister of Penitentiary Services"
+      ],
+      "title": [],
+      "topics": [
+        "role.pep",
+        "sanction"
+      ],
+      "birthDate": [
+        "1986-12-18"
+      ],
+      "nationality": [],
+      "citizenship": [
+        "ve"
+      ],
+      "passportNumber": [],
+      "idNumber": [
+        "V17646721"
+      ],
+      "address": [
+        "Venezuela"
+      ],
+      "notes": [
+        "Programs: VENEZUELA"
+      ],
+      "sourceUrl": [
+        "https://www.cia.gov/resources/world-leaders/foreign-governments/venezuela/",
+        "https://www.treasury.gov/ofac/downloads/sdn.xml"
+      ],
+      "retrievedAt": [
+        "2026-06-04"
+      ]
+    },
+    "sources": [
+      "cia_world_leaders",
+      "ofac_sdn"
+    ],
+    "country": "Venezuela",
+    "country_code": "ve",
+    "date_updated": "",
+    "ofac_uid": "51266",
+    "merged_from": [
+      "f2f02e00-906c-5e6f-b455-ea782eaa5d1c",
+      "fb3c7487-becc-5435-8031-0c07682d7004"
+    ]
+  }
+]
