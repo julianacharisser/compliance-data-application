@@ -1,0 +1,20 @@
+database:
+  path: "db/compliance.db"
+
+pipeline:
+  cia_input:   "transform/cia_normalized.json"
+  ofac_input:  "transform/ofac_normalized.json"
+  dedup_input: "dedup/dedup_results.json"
+  merged:      "dedup/merged.json"
+
+scheduler:
+  hour:   2
+  minute: 0
+
+search:
+  default_limit: 20
+  max_limit:     100
+
+dedup:
+  auto_merge_threshold: 85
+  review_threshold:     65
