@@ -1,0 +1,28 @@
+# Web scraping
+requests
+beautifulsoup4
+lxml
+tenacity
+playwright
+
+# Data processing
+rapidfuzz
+followthemoney
+pycountry
+
+# Database
+# sqlite3 is built into Python — no install needed
+
+# API
+fastapi
+uvicorn[standard]
+pydantic
+
+# Scheduler
+apscheduler
+
+# Config
+pyyaml
+
+# XML parsing
+# xml.etree.ElementTree is built into Python — no install needed
